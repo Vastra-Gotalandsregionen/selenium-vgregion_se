@@ -14,3 +14,6 @@ ${URL} =  https://www.vgregion.se/internpost
 
 Test Searchbar
     Make Two Unique Searches
+
+Test Invalid Input
+    Make Search With Invalid Input

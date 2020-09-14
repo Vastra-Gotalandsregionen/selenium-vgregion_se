@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Internpost.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Internpost.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.Test Searchbar">
+  <component name="RunManager" selected="Python.Test Invalid Input">
     <configuration name="Open Page" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -38,6 +42,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
       <option name="PARAMETERS" value=" -t &quot;Open Page&quot; Internpost.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Invalid Input" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value="-t &quot;Test Invalid Input&quot; Internpost.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -68,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test Invalid Input" />
         <item itemvalue="Python.Test Searchbar" />
         <item itemvalue="Python.Open Page" />
       </list>
@@ -91,6 +117,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#Open_Page/0.0.1366.728@0.0.1366.728" timestamp="1600071014934" />
+    <state x="392" y="0" key="#Test_Invalid_Input" timestamp="1600084107486">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" key="#Test_Invalid_Input/0.0.1366.728@0.0.1366.728" timestamp="1600084107486" />
     <state x="392" y="0" key="#Test_Searchbar" timestamp="1600071046904">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -17,5 +17,11 @@ Make Two Unique Searches
     Click Button		css:#SearchButton
     Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
 
+Make Search With Invalid Input
+    Input Text 			id:SearchQuery	wqertr
+    Click Button		css:#SearchButton
+    Wait Until Page Contains    Din sökning resulterade inte i några träffar.
+
+
 End Test
     Close Browser
