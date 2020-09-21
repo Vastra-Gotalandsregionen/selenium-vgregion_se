@@ -22,6 +22,25 @@ Make Search With Invalid Input
     Click Button		css:#SearchButton
     Wait Until Page Contains    Din sökning resulterade inte i några träffar.
 
+Test IphoneX Displaysize
+    Set Window Size             375  812
+    Input Text                  css:#SearchQuery   Distriktsköterskemottagning, Sjukgymnastik Åmål
+    Click Button		css:#SearchButton
+    Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
+
+Test Ipad Displaysize
+    Set Window Size             768  1024
+    Input Text                  css:#SearchQuery   Distriktsköterskemottagning, Sjukgymnastik Åmål
+    Click Button		css:#SearchButton
+    Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
+
+Test GalaxyFold Displaysize
+    Set Window Size             280  653
+    Input Text                  css:#SearchQuery   Distriktsköterskemottagning, Sjukgymnastik Åmål
+    Click Button		css:#SearchButton
+    Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
+
+
 
 End Test
     Close Browser
