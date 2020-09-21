@@ -40,6 +40,18 @@ Test GalaxyFold Displaysize
     Click Button		css:#SearchButton
     Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
 
+Verify Menu Is Still Present IphoneX
+    Set Window Size             375  812
+    Wait Until Page Contains Element    css:#mobile-menu-btn
+    Click Button                        css:#mobile-menu-btn
+    Wait Until Element Is Visible    class:vgr-mobilemenu__menuwrapper
+
+Verify Sök Is Still Present IphoneX
+    Set Window Size             375  812
+    Wait Until Page Contains Element    css:#search-btn
+    Click Button                        css:#search-btn
+    Wait Until Element Is Visible    class:search__form
+
 
 
 End Test

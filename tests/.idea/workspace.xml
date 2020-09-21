@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternpostResp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/InternpostResp.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
@@ -23,12 +24,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.Test Page Responsive GalaxyFold">
-    <configuration name="Test Invalid Input" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Test Sök IphoneX">
+    <configuration name="Test Menu IphoneX" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -41,7 +43,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value="-t &quot;Test Invalid Input&quot; Internpost.robot" />
+      <option name="PARAMETERS" value="-t &quot;Test Menu IphoneX&quot; InternpostResp.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -112,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Searchbar" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test Sök IphoneX" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,7 +127,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value="-t &quot;Test Searchbar&quot; Internpost.robot" />
+      <option name="PARAMETERS" value="-t &quot;Test Sök IphoneX&quot; InternpostResp.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -134,19 +136,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Test Invalid Input" />
-      <item itemvalue="Python.Test Searchbar" />
       <item itemvalue="Python.Test Page Responsive IphoneX" />
       <item itemvalue="Python.Test Page Responsive Ipad" />
       <item itemvalue="Python.Test Page Responsive GalaxyFold" />
+      <item itemvalue="Python.Test Menu IphoneX" />
+      <item itemvalue="Python.Test Sök IphoneX" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test Sök IphoneX" />
+        <item itemvalue="Python.Test Menu IphoneX" />
         <item itemvalue="Python.Test Page Responsive GalaxyFold" />
         <item itemvalue="Python.Test Page Responsive Ipad" />
         <item itemvalue="Python.Test Page Responsive IphoneX" />
-        <item itemvalue="Python.Test Searchbar" />
-        <item itemvalue="Python.Test Invalid Input" />
       </list>
     </recent_temporary>
   </component>
@@ -181,22 +183,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="13" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600671542014" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1600682562143">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1600683727382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600682562143" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1600682562143">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600683727382" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1600683727381">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600682562143" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1600682562143">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600683727381" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1600683727381">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600682562143" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1600682562143">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600683727381" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1600683727381">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600682562143" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600683727381" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1600673166093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

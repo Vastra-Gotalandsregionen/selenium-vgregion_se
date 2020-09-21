@@ -20,3 +20,9 @@ Test Page Responsive Ipad
 
 Test Page Responsive GalaxyFold
     Test GalaxyFold Displaysize
+
+Test Menu IphoneX
+    Verify Menu Is Still Present IphoneX
+
+Test Sök IphoneX
+    Verify Sök Is Still Present IphoneX
