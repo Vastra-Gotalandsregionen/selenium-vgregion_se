@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
@@ -27,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.Verify Sök In Header">
+  <component name="RunManager" selected="Python.Verify Educational Video">
     <configuration name="Test Link Folkhälsomyndighetens information till allmänheten" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,19 +135,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Test Link Test Link Smittskydd Västra Götalands information till allmänheten" />
       <item itemvalue="Python.Test Link Folkhälsomyndighetens information till allmänheten" />
+      <item itemvalue="Python.Test Link Test Link Smittskydd Västra Götalands information till allmänheten" />
       <item itemvalue="Python.Verify Educational Video" />
       <item itemvalue="Python.Verify Header Menu Appears" />
       <item itemvalue="Python.Verify Sök In Header" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Verify Sök In Header" />
-        <item itemvalue="Python.Verify Header Menu Appears" />
         <item itemvalue="Python.Verify Educational Video" />
         <item itemvalue="Python.Test Link Folkhälsomyndighetens information till allmänheten" />
         <item itemvalue="Python.Test Link Test Link Smittskydd Västra Götalands information till allmänheten" />
+        <item itemvalue="Python.Verify Sök In Header" />
+        <item itemvalue="Python.Verify Header Menu Appears" />
       </list>
     </recent_temporary>
   </component>
@@ -181,22 +182,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="13" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600671542014" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1600948633298">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1601335947340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600948633298" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1600948633298">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601335947340" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1601335947340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600948633298" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1600948633298">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601335947340" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1601335947340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600948633298" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1600948633298">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601335947340" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1601335947340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600948633298" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601335947340" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1600673166093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
