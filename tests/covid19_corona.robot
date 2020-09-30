@@ -2,6 +2,8 @@
 Documentation
 Resource  Resources/Keywords_covid19_corona.robot
 Library  SeleniumLibrary
+Library  Process
+Library  C:\\Users\\abram\\Vgr\\selenium-vgregion_se\\tests\\checkStatusCode.py
 Test Setup  Open Page
 Test Teardown  End Test
 

@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation
 Library  SeleniumLibrary
+Library  Process
+Library  C:\\Users\\abram\\Vgr\\selenium-vgregion_se\\tests\\checkStatusCode.py
 *** Keywords ***
 
 Open Page
@@ -13,13 +15,17 @@ Test Link Smittskydd Västra Götalands information till allmänheten
 
     Sleep                                   5s
     Click Link                              xpath=//a[@href="/halsa-och-vard/vardgivarwebben/vardriktlinjer/smittskydd-vastra-gotaland/coronavirus-2019-ncov-information-till-allmanhet/"]
-    Wait Until Page Contains Element        css:#main-content
+    Run Process                             python        checkStatusCode.py   checkStatusCode()    alias=statuscode
+    ${statusCodeResult} =                   Get Process Result                      statuscode
+    Log                                     Hejsan
+    Log To Console                          ${statusCodeResult.stdout}          console=yes
+    Should Be Equal As Integers             ${statusCodeResult.stdout}   True
 
 Test Link Folkhälsomyndighetens information till allmänheten
 
     Sleep                                   2s
-    Click Element                           xpath=//a[@href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/fragor-och-svar/"]
-    Wait Until Page Contains Element        css:#content
+    Click Link                              xpath=//a[@href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/fragor-och-svar/"]
+
 
 Verify If Educational Video Appears
 
@@ -32,8 +38,8 @@ Verify If Header Menu Is Visible
 
 Verify Sök Function From Header Is Visible
 
-    Wait Until Element Is Visible           xpath:/html/body/div[3]/header/div[6]/div/div/form/label/input
-    Wait Until Element Is Visible           xpath:/html/body/div[3]/header/div[6]/div/div/form/button
+    Wait Until Element Is Visible           class:vgr-button search__button
+    Wait Until Element Is Visible           class:search-input-box search__field
 
 Verify Sök Function Is Working
 
