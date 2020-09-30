@@ -1,6 +1,8 @@
+
 *** Settings ***
 Documentation
 Resource  Resources/Keywords_covid19_corona.robot
+Resource  Resources/keywords_general.robot
 Library  SeleniumLibrary
 Library  Process
 Library  C:\\Users\\abram\\Vgr\\selenium-vgregion_se\\tests\\checkStatusCode.py
@@ -26,9 +28,6 @@ Verify Educational Video
 
     Verify If Educational Video Appears
 
-Verify Header Menu Appears
-
-    Verify If Header Menu Is Visible
 
 Verify Sök In Header
 

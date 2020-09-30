@@ -26,14 +26,6 @@ Make A Search 2
     Click Link                  xpath=//a[@href="https://www.vgregion.se/s/skaraborgs-sjukhus/avdelningar-och-mottagningar/narsjukvardsteam-sodra-skaraborg/"]
     Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
 
-Test Listen Function
-
-    Click Element               id:speaklink
-    Sleep                       2s
-    Click Button                id:agreecookie
-    Wait Until Page Contains Element  id:insipio_player
-    Click Button                id:play50x50
-    Wait Until Page Contains Element  id:pause50x50
 
 Save Search
 

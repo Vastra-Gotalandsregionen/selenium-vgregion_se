@@ -20,27 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tests.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internpost.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Internpost.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternpostResp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/InternpostResp.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_internpost.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/keywords_hitta_vgregion.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_hitta_vgregion.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/covid19_corona.robot" beforeDir="false" afterPath="$PROJECT_DIR$/covid19_corona.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hitta_vgregion.robot" beforeDir="false" afterPath="$PROJECT_DIR$/hitta_vgregion.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,28 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Test Searchbar 1">
-    <configuration name="Test Listen " type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python37-32\python_d.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Listen &quot; hitta_vgregion.robot" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Verify Header Is Visible">
     <configuration name="Test Listen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,7 +74,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Searchbar 1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Verify Header Is Visible" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +87,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Searchbar 1&quot; hitta_vgregion.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Header Is Visible&quot; kontakt-vgr_vgrform.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -126,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Searchbar 2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Verify Sök Function Is Working" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +108,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Searchbar 2&quot; hitta_vgregion.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Sök Function Is Working&quot; Resources/keywords_general.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -147,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Spara Sökning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Verify Sök Function" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +129,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Spara Sökning&quot; hitta_vgregion.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Sök Function&quot; kontakt-vgr_vgrform.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Verify Sök In Header" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python37-32\python_d.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Sök In Header&quot; covid19_corona.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -169,19 +159,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Test Searchbar 2" />
-      <item itemvalue="Python.Test Listen " />
       <item itemvalue="Python.Test Listen" />
-      <item itemvalue="Python.Test Spara Sökning" />
-      <item itemvalue="Python.Test Searchbar 1" />
+      <item itemvalue="Python.Verify Sök Function" />
+      <item itemvalue="Python.Verify Sök In Header" />
+      <item itemvalue="Python.Verify Sök Function Is Working" />
+      <item itemvalue="Python.Verify Header Is Visible" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test Searchbar 1" />
-        <item itemvalue="Python.Test Searchbar 2" />
+        <item itemvalue="Python.Verify Header Is Visible" />
+        <item itemvalue="Python.Verify Sök Function" />
+        <item itemvalue="Python.Verify Sök Function Is Working" />
+        <item itemvalue="Python.Verify Sök In Header" />
         <item itemvalue="Python.Test Listen" />
-        <item itemvalue="Python.Test Spara Sökning" />
-        <item itemvalue="Python.Test Listen " />
       </list>
     </recent_temporary>
   </component>
@@ -232,25 +222,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="13" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600671542014" />
-    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1601458528525">
+    <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601460452348">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601458528525" />
-    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1601458528525">
+    <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601460452348" />
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1601461619497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601458528525" />
-    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1601458528524">
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601461619497" />
+    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1601461619496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601458528524" />
-    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1601458528525">
+    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601461619496" />
+    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1601461619496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601458528525" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1601369729540">
+    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601461619496" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1601461619496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601369729540" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601461619496" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1601459471017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601459471017" />
   </component>
 </project>

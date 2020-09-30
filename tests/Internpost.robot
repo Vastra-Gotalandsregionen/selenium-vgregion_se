@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation
-Resource  Resources/keywords.robot
+Resource  Resources/keywords_internpost.robot
 Library  SeleniumLibrary
 Test Setup  Open Page
 Test Teardown  End Test

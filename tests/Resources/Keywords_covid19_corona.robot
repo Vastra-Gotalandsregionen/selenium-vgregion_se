@@ -32,21 +32,6 @@ Verify If Educational Video Appears
     Sleep                                   5s
     Wait Until Page Contains Element        xpath://*[@id="player"]
 
-Verify If Header Menu Is Visible
-
-    Wait Until Element Is Visible           id:main-menu-nav
-
-Verify Sök Function From Header Is Visible
-
-    Wait Until Element Is Visible           class:vgr-button search__button
-    Wait Until Element Is Visible           class:search-input-box search__field
-
-Verify Sök Function Is Working
-
-    Input Text                              xpath:/html/body/div[3]/header/div[6]/div/div/form/label/input  vård
-    Click Element                           xpath:/html/body/div[3]/header/div[6]/div/div/form/button
-    Wait Until Page Contains Element        id:search-page
-
 
 End Test
     Close Browser
