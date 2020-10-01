@@ -21,13 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Internpost.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Internpost.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternpostResp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/InternpostResp.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/keywords_general.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_general.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/keywords_hitta_vgregion.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_hitta_vgregion.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/keywords_internpost.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_internpost.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/keywords_kontakt-vgr_vgrform.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_kontakt-vgr_vgrform.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hitta_vgregion.robot" beforeDir="false" afterPath="$PROJECT_DIR$/hitta_vgregion.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kontakt-vgr_vgrform.robot" beforeDir="false" afterPath="$PROJECT_DIR$/kontakt-vgr_vgrform.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
@@ -53,8 +51,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Verify Skicka Fråga">
-    <configuration name="Test Contact Message" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Verify Phonenumber">
+    <configuration name="Compare Filter Results" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +65,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Contact Message&quot; Resources/keywords_kontakt-vgr_vgrform.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Compare Filter Results&quot; hitta_vgregion.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -75,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Lyssna (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Verify Phonenumber" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,28 +86,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Lyssna&quot; kontakt-vgr_vgrform.robot" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Verify Header Is Visible (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python37-32\python_d.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Verify Header Is Visible&quot; Startsida.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Phonenumber&quot; kontakt-vgr_vgrform.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -131,6 +108,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
       <option name="PARAMETERS" value=" -t &quot;Verify Skicka Fråga&quot; kontakt-vgr_vgrform.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Verify Sök Function" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python37-32\python_d.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Sök Function&quot; kontakt-vgr_vgrform.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -160,19 +158,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Verify Header Is Visible (1)" />
-      <item itemvalue="Python.Test Lyssna (1)" />
-      <item itemvalue="Python.Test Contact Message" />
       <item itemvalue="Python.Verify Skicka Fråga" />
       <item itemvalue="Python.Vgregiontest" />
+      <item itemvalue="Python.Compare Filter Results" />
+      <item itemvalue="Python.Verify Sök Function" />
+      <item itemvalue="Python.Verify Phonenumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Verify Phonenumber" />
+        <item itemvalue="Python.Verify Sök Function" />
+        <item itemvalue="Python.Compare Filter Results" />
         <item itemvalue="Python.Verify Skicka Fråga" />
         <item itemvalue="Python.Vgregiontest" />
-        <item itemvalue="Python.Test Contact Message" />
-        <item itemvalue="Python.Test Lyssna (1)" />
-        <item itemvalue="Python.Verify Header Is Visible (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -227,25 +225,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601460452348" />
-    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1601544891462">
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1601554861825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601544891462" />
-    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1601544891462">
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
+    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1601554861825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601544891462" />
-    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1601544891462">
+    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
+    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1601554861825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601544891462" />
-    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1601544891462">
+    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1601554861825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601544891462" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1601459471017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601459471017" />
+    <state x="293" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601552014233">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="293" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1601552014233" />
   </component>
 </project>

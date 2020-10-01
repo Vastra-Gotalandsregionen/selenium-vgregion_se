@@ -25,3 +25,6 @@ Verify Header Is Visible
 
 Verify Skicka Fråga
     Test Contact Message
+
+Verify Phonenumber
+    Verify Phonenumber Is Visible

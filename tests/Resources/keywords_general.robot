@@ -28,7 +28,7 @@ Verify If Header Menu Is Visible
 Verify Sök Function Is Working
 
     Input Text                              name:q  vård
-    Click Element                           xpath:/html/body/div[3]/header/div[6]/div/div/form/button
+    Click Element                           css:.vgr-button.search__button
     Wait Until Page Contains Element        id:search-page
 
 

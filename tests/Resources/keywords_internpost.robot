@@ -25,13 +25,13 @@ Test IphoneX Displaysize
 Test Ipad Displaysize
     Set Window Size             768  1024
     Input Text                  css:#SearchQuery   Distriktsköterskemottagning, Sjukgymnastik Åmål
-    Click Button		css:#SearchButton
+    Click Button		        css:#SearchButton
     Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
 
 Test GalaxyFold Displaysize
     Set Window Size             280  653
     Input Text                  css:#SearchQuery   Distriktsköterskemottagning, Sjukgymnastik Åmål
-    Click Button		css:#SearchButton
+    Click Button		        css:#SearchButton
     Wait Until Page Contains    Distriktsköterskemottagning, Sjukgymnastik Åmål
 
 Verify Menu Is Still Present IphoneX

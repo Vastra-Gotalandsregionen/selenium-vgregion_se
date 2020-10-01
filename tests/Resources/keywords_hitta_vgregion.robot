@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation
 Library  SeleniumLibrary
+Library  String
 *** Keywords ***
 
 Make A Search 1
@@ -30,3 +31,27 @@ Save Search
     Click Element               id:save-search
     Click Link                  xpath=//a[@href="/sparade-sokningar/"]
     Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
+
+Compare Filter Results
+
+    Input Text                  css:#search     vård
+    Click Element               css:#search-button
+    ${searchresultnumber} =     Get Text     css:#ul-group li:first-child .group__item + span
+    Log                         ${searchresultnumber}
+    ${searchresultnumber} =     Remove String        ${searchresultnumber}   (    )
+    ${searchresultnumber} =     Convert To Number  ${searchresultnumber}
+    Log                         ${searchresultnumber}
+    Sleep                       2s
+    Click Element               id:select-3
+    Sleep                       1s
+    Press Keys                  id:select-3  ARROW_DOWN
+    Sleep                       1s
+    Press Keys                  id:select-3  ENTER
+    Click Element               css:.filter-submit.button
+    ${searchresultnumber2} =    Get Text     css:#ul-group li:first-child .group__item + span
+    Log                         ${searchresultnumber2}
+    ${searchresultnumber2} =    Remove String        ${searchresultnumber2}   (    )
+    ${searchresultnumber2} =    Convert To Number  ${searchresultnumber2}
+    Log                         ${searchresultnumber2}
+    Should Be True              ${searchresultnumber2} < ${searchresultnumber}
+    Should Be True              0 < ${searchresultnumber}
