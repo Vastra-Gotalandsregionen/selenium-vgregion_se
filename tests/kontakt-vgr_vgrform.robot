@@ -4,7 +4,7 @@ Resource  Resources/keywords_kontakt-vgr_vgrform.robot
 Resource  Resources/keywords_general.robot
 Library  SeleniumLibrary
 Test Setup  Open Page
-#Test Teardown  End Test
+Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
