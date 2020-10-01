@@ -3,11 +3,6 @@ Documentation
 Library  SeleniumLibrary
 *** Keywords ***
 
-Open Page
-
-    Open Browser                about:blank     ${BROWSER}
-    Go To                       ${URL}
-
 Make A Search 1
 
     Input Text                  css:#search     Västra Götalandsregionen satsar på kunskapscentrum i Skaraborg
@@ -35,7 +30,3 @@ Save Search
     Click Element               id:save-search
     Click Link                  xpath=//a[@href="/sparade-sokningar/"]
     Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
-
-End Test
-
-    Close Browser

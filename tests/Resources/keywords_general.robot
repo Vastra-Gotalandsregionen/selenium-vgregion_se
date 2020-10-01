@@ -6,6 +6,11 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 
+Open Page
+
+    Open Browser                about:blank     ${BROWSER}
+    Go To                       ${URL}
+
 
 Test Listen Function
 
@@ -26,3 +31,7 @@ Verify Sök Function Is Working
     Click Element                           xpath:/html/body/div[3]/header/div[6]/div/div/form/button
     Wait Until Page Contains Element        id:search-page
 
+
+End Test
+
+    Close Browser

@@ -5,11 +5,6 @@ Library  Process
 Library  C:\\Users\\abram\\Vgr\\selenium-vgregion_se\\tests\\checkStatusCode.py
 *** Keywords ***
 
-Open Page
-
-    Open Browser                            about:blank     ${BROWSER}
-    Go To                                   ${URL}
-
 
 Test Link Smittskydd Västra Götalands information till allmänheten
 
@@ -32,6 +27,3 @@ Verify If Educational Video Appears
     Sleep                                   5s
     Wait Until Page Contains Element        xpath://*[@id="player"]
 
-
-End Test
-    Close Browser

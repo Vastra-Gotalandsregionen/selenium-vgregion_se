@@ -3,12 +3,6 @@ Documentation
 Library  SeleniumLibrary
 *** Keywords ***
 
-Open Page
-
-    Open Browser                about:blank     ${BROWSER}
-    Go To                       ${URL}
-    Wait Until Page Contains    Internpost
-
 Make Two Unique Searches
     Input Text 			id:SearchQuery	Allemanshälsan vårdcentral lunden skövde
     Click Button		css:#SearchButton
@@ -51,8 +45,3 @@ Verify Sök Is Still Present IphoneX
     Wait Until Page Contains Element    css:#search-btn
     Click Button                        css:#search-btn
     Wait Until Element Is Visible    class:search__form
-
-
-
-End Test
-    Close Browser
