@@ -21,12 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/keywords_general.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_general.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/keywords_hitta_vgregion.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_hitta_vgregion.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/keywords_internpost.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_internpost.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/keywords_kontakt-vgr_vgrform.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_kontakt-vgr_vgrform.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hitta_vgregion.robot" beforeDir="false" afterPath="$PROJECT_DIR$/hitta_vgregion.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kontakt-vgr_vgrform.robot" beforeDir="false" afterPath="$PROJECT_DIR$/kontakt-vgr_vgrform.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
@@ -51,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Verify Phonenumber">
+  <component name="RunManager" selected="Python.Compare Filter Results">
     <configuration name="Compare Filter Results" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,17 +152,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Verify Skicka Fråga" />
-      <item itemvalue="Python.Vgregiontest" />
       <item itemvalue="Python.Compare Filter Results" />
-      <item itemvalue="Python.Verify Sök Function" />
       <item itemvalue="Python.Verify Phonenumber" />
+      <item itemvalue="Python.Verify Skicka Fråga" />
+      <item itemvalue="Python.Verify Sök Function" />
+      <item itemvalue="Python.Vgregiontest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Compare Filter Results" />
         <item itemvalue="Python.Verify Phonenumber" />
         <item itemvalue="Python.Verify Sök Function" />
-        <item itemvalue="Python.Compare Filter Results" />
         <item itemvalue="Python.Verify Skicka Fråga" />
         <item itemvalue="Python.Vgregiontest" />
       </list>
@@ -225,22 +219,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601460452348" />
-    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1601554861825">
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom" timestamp="1601735321214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
-    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1601554861825">
+    <state width="1345" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601735321214" />
+    <state width="1345" height="183" key="GridCell.Tab.0.center" timestamp="1601735321213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
-    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1601554861825">
+    <state width="1345" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601735321213" />
+    <state width="1345" height="183" key="GridCell.Tab.0.left" timestamp="1601735321213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
-    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1601554861825">
+    <state width="1345" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601735321213" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right" timestamp="1601735321213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601554861825" />
+    <state width="1345" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601735321213" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1601459471017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

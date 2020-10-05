@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.8 on win32)" generated="20201001 14:21:02.645" rpa="false">
-<suite id="s1" name="Kontakt-Vgr Vgrform" source="C:\Users\abram\Vgr\selenium-vgregion_se\tests\kontakt-vgr_vgrform.robot">
-<test id="s1-t1" name="Verify Phonenumber">
+<robot generator="Robot 3.2.2 (Python 3.7.8 on win32)" generated="20201003 16:28:20.347" rpa="false">
+<suite id="s1" name="Hitta Vgregion" source="C:\Users\abram\Vgr\selenium-vgregion_se\tests\hitta_vgregion.robot">
+<test id="s1-t1" name="Compare Filter Results">
 <kw name="Open Page" library="keywords_general" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -9,39 +9,227 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201001 14:21:03.558" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20201001 14:21:03.557" endtime="20201001 14:21:06.658"></status>
+<msg timestamp="20201003 16:28:22.253" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20201003 16:28:22.252" endtime="20201003 16:28:25.797"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20201001 14:21:06.660" level="INFO">Opening url 'https://www.vgregion.se/kontakt-vgr/?vgrform=1/'</msg>
-<status status="PASS" starttime="20201001 14:21:06.659" endtime="20201001 14:21:07.664"></status>
+<msg timestamp="20201003 16:28:25.799" level="INFO">Opening url 'https://hitta.vgregion.se/'</msg>
+<status status="PASS" starttime="20201003 16:28:25.798" endtime="20201003 16:28:26.669"></status>
 </kw>
-<status status="PASS" starttime="20201001 14:21:03.555" endtime="20201001 14:21:07.665"></status>
+<status status="PASS" starttime="20201003 16:28:22.251" endtime="20201003 16:28:26.670"></status>
 </kw>
-<kw name="Verify Phonenumber Is Visible" library="keywords_kontakt-vgr_vgrform">
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on the current page.</doc>
+<kw name="Compare Filter Results" library="keywords_hitta_vgregion">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>010-441 00 00</arg>
+<arg>css:#search</arg>
+<arg>vård</arg>
 </arguments>
-<status status="PASS" starttime="20201001 14:21:07.667" endtime="20201001 14:21:07.699"></status>
+<msg timestamp="20201003 16:28:26.673" level="INFO">Typing text 'vård' into text field 'css:#search'.</msg>
+<status status="PASS" starttime="20201003 16:28:26.672" endtime="20201003 16:28:26.762"></status>
 </kw>
-<status status="PASS" starttime="20201001 14:21:07.665" endtime="20201001 14:21:07.700"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#search-button</arg>
+</arguments>
+<msg timestamp="20201003 16:28:26.763" level="INFO">Clicking element 'css:#search-button'.</msg>
+<status status="PASS" starttime="20201003 16:28:26.762" endtime="20201003 16:28:27.652"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#ul-group li:first-child .group__item + span</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber}</var>
+</assign>
+<msg timestamp="20201003 16:28:27.689" level="INFO">${searchresultnumber} = (23425)</msg>
+<status status="PASS" starttime="20201003 16:28:27.653" endtime="20201003 16:28:27.689"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${searchresultnumber}</arg>
+</arguments>
+<msg timestamp="20201003 16:28:27.690" level="INFO">(23425)</msg>
+<status status="PASS" starttime="20201003 16:28:27.689" endtime="20201003 16:28:27.691"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${searchresultnumber}</arg>
+<arg>(</arg>
+<arg>)</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber}</var>
+</assign>
+<msg timestamp="20201003 16:28:27.692" level="INFO">${searchresultnumber} = 23425</msg>
+<status status="PASS" starttime="20201003 16:28:27.691" endtime="20201003 16:28:27.692"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${searchresultnumber}</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber}</var>
+</assign>
+<msg timestamp="20201003 16:28:27.694" level="INFO">${searchresultnumber} = 23425.0</msg>
+<status status="PASS" starttime="20201003 16:28:27.693" endtime="20201003 16:28:27.694"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${searchresultnumber}</arg>
+</arguments>
+<msg timestamp="20201003 16:28:27.696" level="INFO">23425.0</msg>
+<status status="PASS" starttime="20201003 16:28:27.695" endtime="20201003 16:28:27.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201003 16:28:29.699" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201003 16:28:27.697" endtime="20201003 16:28:29.699"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:select-3</arg>
+</arguments>
+<msg timestamp="20201003 16:28:29.701" level="INFO">Clicking element 'id:select-3'.</msg>
+<status status="PASS" starttime="20201003 16:28:29.700" endtime="20201003 16:28:29.773"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201003 16:28:30.777" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201003 16:28:29.774" endtime="20201003 16:28:30.778"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id:select-3</arg>
+<arg>ARROW_DOWN</arg>
+</arguments>
+<msg timestamp="20201003 16:28:30.780" level="INFO">Sending key(s) ('ARROW_DOWN',) to id:select-3 element.</msg>
+<msg timestamp="20201003 16:28:31.082" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
+<msg timestamp="20201003 16:28:31.082" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20201003 16:28:30.779" endtime="20201003 16:28:31.092"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201003 16:28:32.093" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201003 16:28:31.093" endtime="20201003 16:28:32.093"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id:select-3</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201003 16:28:32.095" level="INFO">Sending key(s) ('ENTER',) to id:select-3 element.</msg>
+<msg timestamp="20201003 16:28:32.387" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20201003 16:28:32.388" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20201003 16:28:32.094" endtime="20201003 16:28:32.402"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.filter-submit.button</arg>
+</arguments>
+<msg timestamp="20201003 16:28:32.403" level="INFO">Clicking element 'css:.filter-submit.button'.</msg>
+<status status="PASS" starttime="20201003 16:28:32.402" endtime="20201003 16:28:32.961"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#ul-group li:first-child .group__item + span</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber2}</var>
+</assign>
+<msg timestamp="20201003 16:28:32.994" level="INFO">${searchresultnumber2} = (4930)</msg>
+<status status="PASS" starttime="20201003 16:28:32.962" endtime="20201003 16:28:32.994"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+</arguments>
+<msg timestamp="20201003 16:28:32.995" level="INFO">(4930)</msg>
+<status status="PASS" starttime="20201003 16:28:32.995" endtime="20201003 16:28:32.996"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+<arg>(</arg>
+<arg>)</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber2}</var>
+</assign>
+<msg timestamp="20201003 16:28:32.997" level="INFO">${searchresultnumber2} = 4930</msg>
+<status status="PASS" starttime="20201003 16:28:32.996" endtime="20201003 16:28:32.998"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber2}</var>
+</assign>
+<msg timestamp="20201003 16:28:33.000" level="INFO">${searchresultnumber2} = 4930.0</msg>
+<status status="PASS" starttime="20201003 16:28:32.998" endtime="20201003 16:28:33.000"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+</arguments>
+<msg timestamp="20201003 16:28:33.001" level="INFO">4930.0</msg>
+<status status="PASS" starttime="20201003 16:28:33.000" endtime="20201003 16:28:33.002"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${searchresultnumber2} &lt; ${searchresultnumber}</arg>
+</arguments>
+<status status="PASS" starttime="20201003 16:28:33.002" endtime="20201003 16:28:33.003"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>0 &lt; ${searchresultnumber}</arg>
+</arguments>
+<status status="PASS" starttime="20201003 16:28:33.004" endtime="20201003 16:28:33.005"></status>
+</kw>
+<status status="PASS" starttime="20201003 16:28:26.671" endtime="20201003 16:28:33.006"></status>
 </kw>
 <kw name="End Test" library="keywords_general" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201001 14:21:07.703" endtime="20201001 14:21:09.898"></status>
+<status status="PASS" starttime="20201003 16:28:33.009" endtime="20201003 16:28:35.624"></status>
 </kw>
-<status status="PASS" starttime="20201001 14:21:07.701" endtime="20201001 14:21:09.899"></status>
+<status status="PASS" starttime="20201003 16:28:33.007" endtime="20201003 16:28:35.625"></status>
 </kw>
-<status status="PASS" starttime="20201001 14:21:03.553" endtime="20201001 14:21:09.899" critical="yes"></status>
+<status status="PASS" starttime="20201003 16:28:22.248" endtime="20201003 16:28:35.625" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201001 14:21:02.654" endtime="20201001 14:21:09.902"></status>
+<status status="PASS" starttime="20201003 16:28:20.353" endtime="20201003 16:28:35.628"></status>
 </suite>
 <statistics>
 <total>
@@ -51,7 +239,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Kontakt-Vgr Vgrform">Kontakt-Vgr Vgrform</stat>
+<stat pass="1" fail="0" id="s1" name="Hitta Vgregion">Hitta Vgregion</stat>
 </suite>
 </statistics>
 <errors>
