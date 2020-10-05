@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation
-Resource  Resources/keywords_kontakt-vgr_vgrform.robot
+Resource  Resources/keywords_general.robot
 Resource  Resources/keywords_startsidan.robot
 Library  SeleniumLibrary
 Test Setup  Open Page
@@ -8,7 +8,7 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/kontakt-vgr/?vgrform=1/
+${URL} =  https://www.vgregion.se
 
 
 
@@ -22,3 +22,9 @@ Verify Sök Function
 
 Verify Header Is Visible
     Verify If Header Menu Is Visible
+
+Test Dropdown Under Aktuellt
+    Verify Dropdown Under Aktuellt
+
+Test VGR Fokus Box
+    Verify VGR Fokus Links
