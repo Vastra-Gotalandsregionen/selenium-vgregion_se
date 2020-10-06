@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.8 on win32)" generated="20201005 15:49:57.173" rpa="false">
-<suite id="s1" name="Startsidan" source="C:\Users\abram\Vgr\selenium-vgregion_se\tests\startsidan.robot">
-<test id="s1-t1" name="Test VGR Fokus Box">
+<robot generator="Robot 3.2.2 (Python 3.7.8 on win32)" generated="20201006 11:58:52.286" rpa="false">
+<suite id="s1" name="Alfresco" source="C:\Users\abram\Vgr\selenium-vgregion_se\tests\alfresco.robot">
+<test id="s1-t1" name="Verify Dropdown">
 <kw name="Open Page" library="keywords_general" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -9,67 +9,63 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201005 15:49:57.955" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20201005 15:49:57.954" endtime="20201005 15:50:01.090"></status>
+<msg timestamp="20201006 11:58:53.046" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20201006 11:58:53.046" endtime="20201006 11:58:56.258"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20201005 15:50:01.091" level="INFO">Opening url 'https://www.vgregion.se'</msg>
-<status status="PASS" starttime="20201005 15:50:01.090" endtime="20201005 15:50:01.799"></status>
+<msg timestamp="20201006 11:58:56.259" level="INFO">Opening url 'https://www.vgregion.se/ov/alfresco/'</msg>
+<status status="PASS" starttime="20201006 11:58:56.258" endtime="20201006 11:58:56.969"></status>
 </kw>
-<status status="PASS" starttime="20201005 15:49:57.952" endtime="20201005 15:50:01.800"></status>
+<status status="PASS" starttime="20201006 11:58:53.044" endtime="20201006 11:58:56.970"></status>
 </kw>
-<kw name="Verify VGR Fokus Links" library="keywords_startsidan">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Check Dropdown Ta Kontakt Med Webbansvarig Här" library="keywords_alfresco">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>xpath=//a[@href="https://vgrfokus.se/"]</arg>
+<arg>1s</arg>
 </arguments>
-<status status="PASS" starttime="20201005 15:50:01.802" endtime="20201005 15:50:01.846"></status>
+<msg timestamp="20201006 11:58:57.975" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201006 11:58:56.973" endtime="20201006 11:58:57.975"></status>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=//a[@href="https://vgrfokus.se/2020/10/vgr-fortsatter-minska-kostnaderna-for-inhyrd-personal/"]</arg>
+<arg>css:#contactForm &gt; button</arg>
 </arguments>
-<status status="PASS" starttime="20201005 15:50:01.847" endtime="20201005 15:50:01.886"></status>
+<msg timestamp="20201006 11:58:57.977" level="INFO">Clicking button 'css:#contactForm &gt; button'.</msg>
+<status status="PASS" starttime="20201006 11:58:57.976" endtime="20201006 11:58:58.068"></status>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>xpath=//a[@href="https://vgrfokus.se/2020/10/fortsatt-okning-av-covid-19-i-vastra-gotaland-maste-minska-smittspridningen/"]</arg>
+<arg>1s</arg>
 </arguments>
-<status status="PASS" starttime="20201005 15:50:01.886" endtime="20201005 15:50:01.919"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>xpath=//a[@href="https://vgrfokus.se/2020/10/beroende-av-datorspel-har-finns-hjalpen/"]</arg>
-</arguments>
-<status status="PASS" starttime="20201005 15:50:01.919" endtime="20201005 15:50:01.954"></status>
+<msg timestamp="20201006 11:58:59.071" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201006 11:58:58.069" endtime="20201006 11:58:59.071"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>xpath=//a[@href="https://vgrfokus.se/2020/09/700-vastsvenskar-kan-ha-oupptackt-cancer/"]</arg>
+<arg>css:#contactForm [href="https://www.1177.se/Vastra-Gotaland/hitta-vard/"]</arg>
 </arguments>
-<status status="PASS" starttime="20201005 15:50:01.954" endtime="20201005 15:50:01.988"></status>
+<status status="PASS" starttime="20201006 11:58:59.072" endtime="20201006 11:58:59.108"></status>
 </kw>
-<status status="PASS" starttime="20201005 15:50:01.800" endtime="20201005 15:50:01.989"></status>
+<status status="PASS" starttime="20201006 11:58:56.972" endtime="20201006 11:58:59.109"></status>
 </kw>
 <kw name="End Test" library="keywords_general" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201005 15:50:01.991" endtime="20201005 15:50:04.113"></status>
+<status status="PASS" starttime="20201006 11:58:59.111" endtime="20201006 11:59:01.270"></status>
 </kw>
-<status status="PASS" starttime="20201005 15:50:01.990" endtime="20201005 15:50:04.114"></status>
+<status status="PASS" starttime="20201006 11:58:59.110" endtime="20201006 11:59:01.271"></status>
 </kw>
-<status status="PASS" starttime="20201005 15:49:57.950" endtime="20201005 15:50:04.114" critical="yes"></status>
+<status status="PASS" starttime="20201006 11:58:53.042" endtime="20201006 11:59:01.271" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201005 15:49:57.180" endtime="20201005 15:50:04.117"></status>
+<status status="PASS" starttime="20201006 11:58:52.291" endtime="20201006 11:59:01.274"></status>
 </suite>
 <statistics>
 <total>
@@ -79,7 +75,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Startsidan">Startsidan</stat>
+<stat pass="1" fail="0" id="s1" name="Alfresco">Alfresco</stat>
 </suite>
 </statistics>
 <errors>
