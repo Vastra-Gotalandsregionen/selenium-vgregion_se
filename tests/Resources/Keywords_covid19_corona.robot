@@ -2,7 +2,8 @@
 Documentation
 Library  SeleniumLibrary
 Library  Process
-Library  C:\\Users\\abram\\Vgr\\selenium-vgregion_se\\tests\\checkStatusCode.py
+Library  checkStatusCode.py
+
 *** Keywords ***
 
 
@@ -10,17 +11,17 @@ Test Link Smittskydd Västra Götalands information till allmänheten
 
     Sleep                                   5s
     Click Link                              xpath=//a[@href="/halsa-och-vard/vardgivarwebben/vardriktlinjer/smittskydd-vastra-gotaland/coronavirus-2019-ncov-information-till-allmanhet/"]
-    Run Process                             python        checkStatusCode.py   checkStatusCode()    alias=statuscode
-    ${statusCodeResult} =                   Get Process Result                      statuscode
-    Log                                     Hejsan
-    Log To Console                          ${statusCodeResult.stdout}          console=yes
-    Should Be Equal As Integers             ${statusCodeResult.stdout}   True
+    ${statusCodeResult}                     check status code     ${URL}
+    Log To Console                          ${statusCodeResult}          console=yes
+    Should Be True                          ${statusCodeResult}   'true'
 
 Test Link Folkhälsomyndighetens information till allmänheten
 
     Sleep                                   2s
     Click Link                              xpath=//a[@href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/fragor-och-svar/"]
-
+    ${statusCodeResult2}                    check status code      ${URL}
+    Log To Console                          ${statusCodeResult2}          console=yes
+    Should Be True                          ${statusCodeResult2}   'true'
 
 Verify If Educational Video Appears
 

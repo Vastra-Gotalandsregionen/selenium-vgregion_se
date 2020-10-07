@@ -5,7 +5,6 @@ Resource  Resources/Keywords_covid19_corona.robot
 Resource  Resources/keywords_general.robot
 Library  SeleniumLibrary
 Library  Process
-Library  C:\\Users\\abram\\Vgr\\selenium-vgregion_se\\tests\\checkStatusCode.py
 Test Setup  Open Page
 Test Teardown  End Test
 
@@ -28,8 +27,15 @@ Verify Educational Video
 
     Verify If Educational Video Appears
 
+Verify Header Is Visible
 
-Verify Sök In Header
+    Verify If Header Menu Is Visible
 
-    Verify Sök Function From Header Is Visible
+Verify Sök Function
+
     Verify Sök Function Is Working
+
+
+Test Listen
+
+    Test Listen Function
