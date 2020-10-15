@@ -20,26 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/regional_lagesrapport_covid-19.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Keywords_covid19_corona.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/keywords_alfresco.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/keywords_alfresco.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkStatusCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/checkStatusCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid19_corona.robot" beforeDir="false" afterPath="$PROJECT_DIR$/covid19_corona.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +51,8 @@
       <recent name="C:\Users\abram\Vgr\selenium-vgregion_se\tests\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test Link Test Link Smittskydd Västra Götalands information till allmänheten">
-    <configuration name="Test Link Folkhälsomyndighetens information till allmänheten" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Unsubscribe To Newsletter">
+    <configuration name="Subscribe To Newsletter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,7 +65,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Link Folkhälsomyndighetens information till allmänheten&quot; covid19_corona.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Subscribe To Newsletter&quot; prenumeration_nyhetsbrev.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -88,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Link Test Link Smittskydd Västra Götalands information till allmänheten" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test Dropdown" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,7 +86,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Link Test Link Smittskydd Västra Götalands information till allmänheten&quot; covid19_corona.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Test Dropdown&quot; regional_lagesrapport_covid-19.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -109,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Verify Dropdown" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test Statistik Links" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,7 +107,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Verify Dropdown&quot; alfresco.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Test Statistik Links&quot; regional_lagesrapport_covid-19.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unsubscribe To Newsletter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python37-32\python_d.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Unsubscribe To Newsletter&quot; prenumeration_nyhetsbrev.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -143,28 +149,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Verify Header Is Visible&quot; alfresco.robot" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Verify Sök Function" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\abram\AppData\Local\Programs\Python\Python37-32\python_d.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Verify Sök Function&quot; alfresco.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Verify Header Is Visible&quot; regional_lagesrapport_covid-19.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -173,19 +158,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Verify Dropdown" />
-      <item itemvalue="Python.Verify Sök Function" />
+      <item itemvalue="Python.Test Dropdown" />
       <item itemvalue="Python.Verify Header Is Visible" />
-      <item itemvalue="Python.Test Link Test Link Smittskydd Västra Götalands information till allmänheten" />
-      <item itemvalue="Python.Test Link Folkhälsomyndighetens information till allmänheten" />
+      <item itemvalue="Python.Test Statistik Links" />
+      <item itemvalue="Python.Subscribe To Newsletter" />
+      <item itemvalue="Python.Unsubscribe To Newsletter" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test Link Test Link Smittskydd Västra Götalands information till allmänheten" />
-        <item itemvalue="Python.Test Link Folkhälsomyndighetens information till allmänheten" />
-        <item itemvalue="Python.Verify Dropdown" />
+        <item itemvalue="Python.Unsubscribe To Newsletter" />
+        <item itemvalue="Python.Subscribe To Newsletter" />
+        <item itemvalue="Python.Test Dropdown" />
+        <item itemvalue="Python.Test Statistik Links" />
         <item itemvalue="Python.Verify Header Is Visible" />
-        <item itemvalue="Python.Verify Sök Function" />
       </list>
     </recent_temporary>
   </component>
@@ -236,26 +221,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="13" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600671542014" />
-    <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601460452348">
+    <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602593875655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601460452348" />
-    <state width="1345" height="187" key="GridCell.Tab.0.bottom" timestamp="1602074546323">
+    <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602593875655" />
+    <state width="1345" height="187" key="GridCell.Tab.0.bottom" timestamp="1602599189757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602074546323" />
-    <state width="1345" height="187" key="GridCell.Tab.0.center" timestamp="1602074546323">
+    <state width="1345" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
+    <state width="1345" height="187" key="GridCell.Tab.0.center" timestamp="1602599189757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602074546323" />
-    <state width="1345" height="187" key="GridCell.Tab.0.left" timestamp="1602074546323">
+    <state width="1345" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
+    <state width="1345" height="187" key="GridCell.Tab.0.left" timestamp="1602599189756">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602074546323" />
-    <state width="1345" height="187" key="GridCell.Tab.0.right" timestamp="1602074546323">
+    <state width="1345" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602599189756" />
+    <state width="1345" height="187" key="GridCell.Tab.0.right" timestamp="1602599189757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602074546323" />
+    <state width="1345" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1601459471017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
