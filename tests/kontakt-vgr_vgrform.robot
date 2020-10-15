@@ -28,3 +28,6 @@ Verify Skicka Fråga
 
 Verify Phonenumber
     Verify Phonenumber Is Visible
+
+Fetch Links And Check Responsecode
+    Get All Links And Return Response Code

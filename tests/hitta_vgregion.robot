@@ -28,3 +28,6 @@ Test Spara Sökning
 Compare Filter Results
 
     Compare Filter Results
+
+Fetch Links And Check Responsecode
+    Get All Links And Return Response Code

@@ -39,3 +39,6 @@ Verify Sök Function
 Test Listen
 
     Test Listen Function
+
+Fetch Links And Check Responsecode
+    Get All Links And Return Response Code

@@ -28,3 +28,6 @@ Subscribe To Newsletter
 
 Unsubscribe To Newsletter
     Test Unsubscribe
+
+Fetch Links And Check Responsecode
+    Get All Links And Return Response Code

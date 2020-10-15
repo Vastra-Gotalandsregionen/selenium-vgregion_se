@@ -25,3 +25,6 @@ Verify Header Is Visible
 
 Verify Dropdown
     Check Dropdown Ta Kontakt Med Webbansvarig Här
+
+Fetch Links And Check Responsecode
+    Get All Links And Return Response Code

@@ -28,3 +28,6 @@ Test Dropdown Under Aktuellt
 
 Test VGR Fokus Box
     Verify VGR Fokus Links
+
+Fetch Links And Check Responsecode
+    Get All Links And Return Response Code
