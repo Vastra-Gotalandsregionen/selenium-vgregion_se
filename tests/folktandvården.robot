@@ -4,7 +4,7 @@ Resource  Resources/keywords_general.robot
 Resource  Resources/keywords_folktandvården.robot
 Library  SeleniumLibrary
 Test Setup  Open Page
-#Test Teardown  End Test
+Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
@@ -23,5 +23,8 @@ Verify Sök Function
 Verify Header Is Visible
     Verify If Header Menu Is Visible
 
-Test Hitta Klinik
-    Use Hitta Klinik 
+Test Hitta Klinik No Filtera
+    Use Hitta Klinik
+
+Test Hitta Klinik With Filters
+    Use Hitta Klinik With Filters
