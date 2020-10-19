@@ -25,8 +25,6 @@ Verify Header Is Visible
 Test Statistik Links
     Test Links
 
-Test Dropdown
-    Test Dropdown Section
 
 Fetch Links And Check Responsecode
     Get All Links And Return Response Code
