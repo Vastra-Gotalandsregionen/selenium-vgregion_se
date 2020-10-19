@@ -50,10 +50,27 @@ Get All Links And Return Response Code
     Log    ${LinkSize}
      FOR    ${ELEMENT}    IN    @{LinkItems}
         Log    ${ELEMENT}
+
+
+        #Checks if links return 200-value
      ${statusCodeResult}                     check status code     ${URL}
-    Log                          ${statusCodeResult}
-    Should Be True                          ${statusCodeResult}   'true'
-     END
+    Log                             ${statusCodeResult}
+    Should Be True                  ${statusCodeResult}            'true'
+
+
+        # Checks HTML for links which opens '_blank' without the following attributes:
+        # rel="noopener"
+        # rel="noreferrer"
+    ${noanchor}                     no anchor target blank         ${URL}
+    Log                             ${noanchor}
+    Should Be True                  ${noanchor}                    'true'
+
+
+    #Checks HTML for not allowed third parties. For te moment only looks for Google Analytics, Google Tag Manager and Adobe Analytics.
+    ${checkthirdparties}            only allowed third parties     ${URL}
+    Log                             ${checkthirdparties}
+    Should Be True                  ${checkthirdparties}           'true'
+    END
 
 
 
