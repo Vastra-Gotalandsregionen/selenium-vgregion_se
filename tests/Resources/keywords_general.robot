@@ -3,7 +3,9 @@ Documentation
 Library  SeleniumLibrary
 Library  Process
 Library  checkStatusCode.py
-Library    Collections
+Library  Collections
+Library  no_anchor_target_blank.py
+Library  check_third_parties.py
 #General tests for functions used on many pages
 
 *** Keywords ***
