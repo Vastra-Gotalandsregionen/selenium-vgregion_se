@@ -5,12 +5,18 @@ Library  SeleniumLibrary
 *** Keywords ***
 
 Use Hitta Klinik
+
+    [Documentation]     Tests search function "Hitta Klinik"
+
     Input Text                          css:#SearchQuery        Specialistkliniken för endodonti Göteborg
     Click Element                       css:#SearchButton
     Sleep                               1s
     Wait Until Page Contains            Specialistkliniken för endodonti Göteborg
 
 Use Hitta Klinik With Filters
+
+    [Documentation] Tests search function "Hitta Klinik" with filters
+
     Input Text                          css:#SearchQuery        Specialistkliniken för endodonti Göteborg
     #Cant get css for filter element to work
     Sleep                               1s

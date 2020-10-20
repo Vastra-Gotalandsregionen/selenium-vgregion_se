@@ -51,7 +51,7 @@
       <recent name="C:\Users\abram\Vgr\selenium-vgregion_se\tests\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Fetch Links And Check Responsecode">
+  <component name="RunManager" selected="Python.Test VGR Fokus Box">
     <configuration name="Fetch Links And Check Responsecode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,27 +66,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
       <option name="PARAMETERS" value=" -t &quot;Fetch Links And Check Responsecode&quot; regional_lagesrapport_covid-19.robot" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Fetch Links And Check Responsecode (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\ka.balno1\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Fetch Links And Check Responsecode&quot; prenumeration_nyhetsbrev.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -157,20 +136,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Test VGR Fokus Box" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ka.balno1\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Test VGR Fokus Box&quot; startsidan.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Fetch Links And Check Responsecode (4)" />
       <item itemvalue="Python.Fetch Links And Check Responsecode (5)" />
       <item itemvalue="Python.Fetch Links And Check Responsecode (1)" />
       <item itemvalue="Python.Test Hitta Klinik" />
       <item itemvalue="Python.Fetch Links And Check Responsecode" />
+      <item itemvalue="Python.Test VGR Fokus Box" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test VGR Fokus Box" />
         <item itemvalue="Python.Fetch Links And Check Responsecode" />
         <item itemvalue="Python.Test Hitta Klinik" />
         <item itemvalue="Python.Fetch Links And Check Responsecode (1)" />
         <item itemvalue="Python.Fetch Links And Check Responsecode (5)" />
-        <item itemvalue="Python.Fetch Links And Check Responsecode (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -226,26 +226,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602593875655" />
-    <state width="1515" height="195" key="GridCell.Tab.0.bottom" timestamp="1603108218667">
+    <state width="1515" height="195" key="GridCell.Tab.0.bottom" timestamp="1603182652719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
-    <state width="1515" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603108218667" />
-    <state width="1515" height="195" key="GridCell.Tab.0.center" timestamp="1603108218667">
+    <state width="1515" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603182652719" />
+    <state width="1515" height="195" key="GridCell.Tab.0.center" timestamp="1603182652719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
-    <state width="1515" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603108218667" />
-    <state width="1515" height="195" key="GridCell.Tab.0.left" timestamp="1603108218667">
+    <state width="1515" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603182652719" />
+    <state width="1515" height="195" key="GridCell.Tab.0.left" timestamp="1603182652718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602599189756" />
-    <state width="1515" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603108218667" />
-    <state width="1515" height="195" key="GridCell.Tab.0.right" timestamp="1603108218667">
+    <state width="1515" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603182652718" />
+    <state width="1515" height="195" key="GridCell.Tab.0.right" timestamp="1603182652719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
-    <state width="1515" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603108218667" />
+    <state width="1515" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603182652719" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1602755313164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -12,11 +12,15 @@ Library  check_third_parties.py
 
 Open Page
 
+    [Documentation]    Opens selected browser with selected website
+
     Open Browser                about:blank     ${BROWSER}
     Go To                       ${URL}
 
 
 Test Listen Function
+
+    [Documentation]     Tests "Lyssna Nu" on header of page
 
     Click Element               id:speaklink
     Sleep                       2s
@@ -27,9 +31,13 @@ Test Listen Function
 
 Verify If Header Menu Is Visible
 
+    [Documentation]     Verifies that header appears on page
+
     Wait Until Element Is Visible           id:main-menu-nav
 
 Verify Sök Function Is Working
+
+    [Documentation]     Verifies that searchbar on header works
 
     Input Text                              name:q  vård
     Click Element                           css:.vgr-button.search__button
@@ -37,7 +45,10 @@ Verify Sök Function Is Working
 
 
 Get All Links And Return Response Code
+
     [Tags]    Links
+    [Documentation]     Gets all links on page and tests staus code to be 200
+
     ${AllLinksCount} =    Get Element Count    //a
     Log    ${AllLinksCount}
     @{LinkItems}    Create List

@@ -6,6 +6,8 @@ Library  SeleniumLibrary
 
 Test Subscribe
 
+    [Documentation] Subscribes to newsletter on page
+
     Input Text              id:EmailAdress      test20014565@gmail.com
     Click Element           css:[name="ButtonAction"][value="Prenumerera"]
     Go To                        https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin
@@ -17,6 +19,8 @@ Test Subscribe
     Wait Until Page Contains     Prenumerera på nyhetsbrev
 
 Test Unsubscribe
+
+    [Documentation] Unsubscribes to newsletter on page
 
     Input Text              id:EmailAdress      test20014565@gmail.com
     Click Element           css:[name="ButtonAction"][value="Avprenumerera"]
