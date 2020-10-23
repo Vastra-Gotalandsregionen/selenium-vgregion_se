@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 
 Expanderingsblock
 
-    [Documentation] Compares height between an expanded block and a non expanded block
+    # [Documentation] Compares height between an expanded block and a non expanded block
 
     Wait Until Element Is Visible       css:#main-content > div.row.content-area-wrapper > div.block.display-option-100.expandedblock > div > div > button
     ${width}	${height} =	            Get Element Size	css:#main-content > div.row.content-area-wrapper > div.block.display-option-100.expandedblock > div

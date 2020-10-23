@@ -9,7 +9,7 @@ Verify Phonenumber Is Visible
 
 Test Contact Message
 
-    [Documentation] Tests "Kontakta Mig"
+  #  [Documentation] Tests "Kontakta Mig"
 
     Input Text                  css:#namn                   Testrobot
     Input Text                  css:#epost                  test20014565@gmail.com
