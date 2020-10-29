@@ -21,7 +21,7 @@ Open Page
 Test Listen Function
 
     # [Documentation]     Tests "Lyssna Nu" on header of page
-
+    Set Window Size                1400  1000
     Sleep                                   1s
     Click Element               id:speaklink
     Sleep                       2s
@@ -33,13 +33,13 @@ Test Listen Function
 Verify If Header Menu Is Visible
 
     # [Documentation]     Verifies that header appears on page
-
+    Set Window Size                1400  1000
     Wait Until Element Is Visible           id:main-menu-nav
 
 Verify Sök Function Is Working
 
     # [Documentation]     Verifies that searchbar on header works
-
+    Set Window Size                1400  1000
     Sleep                                   1s
     Input Text                              name:q  vård
     Click Element                           css:.vgr-button.search__button
