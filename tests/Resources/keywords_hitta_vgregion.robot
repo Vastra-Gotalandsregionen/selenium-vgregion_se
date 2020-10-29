@@ -44,6 +44,7 @@ Compare Filter Results
 
     Input Text                  css:#search     vård
     Click Element               css:#search-button
+    Sleep                                   1s
     ${searchresultnumber} =     Get Text     css:#ul-group li:first-child .group__item + span
     Log                         ${searchresultnumber}
     ${searchresultnumber} =     Remove String        ${searchresultnumber}   (    )
@@ -56,6 +57,7 @@ Compare Filter Results
     Sleep                       1s
     Press Keys                  id:select-3  ENTER
     Click Element               css:.filter-submit.button
+    Sleep                                   1s
     ${searchresultnumber2} =    Get Text     css:#ul-group li:first-child .group__item + span
     Log                         ${searchresultnumber2}
     ${searchresultnumber2} =    Remove String        ${searchresultnumber2}   (    )

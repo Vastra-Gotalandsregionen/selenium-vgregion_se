@@ -10,7 +10,7 @@ Use Hitta Klinik
 
     Input Text                          css:#SearchQuery        Specialistkliniken för endodonti Göteborg
     Click Element                       css:#SearchButton
-    Sleep                               1s
+    Sleep                               2s
     Wait Until Page Contains            Specialistkliniken för endodonti Göteborg
 
 Use Hitta Klinik With Filters

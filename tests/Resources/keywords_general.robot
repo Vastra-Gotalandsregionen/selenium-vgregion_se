@@ -22,6 +22,7 @@ Test Listen Function
 
     [Documentation]     Tests "Lyssna Nu" on header of page
 
+    Sleep                                   1s
     Click Element               id:speaklink
     Sleep                       2s
     Click Button                id:agreecookie
@@ -39,6 +40,7 @@ Verify Sök Function Is Working
 
     [Documentation]     Verifies that searchbar on header works
 
+    Sleep                                   1s
     Input Text                              name:q  vård
     Click Element                           css:.vgr-button.search__button
     Wait Until Page Contains Element        id:search-page

@@ -10,7 +10,9 @@ Test Subscribe
 
     Input Text              id:EmailAdress      test20014565@gmail.com
     Click Element           css:[name="ButtonAction"][value="Prenumerera"]
+    Sleep                                   1s
     Go To                        https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+    Sleep                                   1s
     Input Text                   name:identifier             test20014565@gmail.com
     Click Element                xpath:/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button
     Sleep                        3s
@@ -24,6 +26,7 @@ Test Unsubscribe
 
     Input Text              id:EmailAdress      test20014565@gmail.com
     Click Element           css:[name="ButtonAction"][value="Avprenumerera"]
+    Sleep                                   1s
     Go To                        https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin
     Input Text                   name:identifier             test20014565@gmail.com
     Click Element                xpath:/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button
