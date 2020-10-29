@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 
 Test Subscribe
 
-    [Documentation] Subscribes to newsletter on page
+    # [Documentation] Subscribes to newsletter on page
 
     Input Text              id:EmailAdress      test20014565@gmail.com
     Click Element           css:[name="ButtonAction"][value="Prenumerera"]
@@ -22,7 +22,7 @@ Test Subscribe
 
 Test Unsubscribe
 
-    [Documentation] Unsubscribes to newsletter on page
+    # [Documentation] Unsubscribes to newsletter on page
 
     Input Text              id:EmailAdress      test20014565@gmail.com
     Click Element           css:[name="ButtonAction"][value="Avprenumerera"]

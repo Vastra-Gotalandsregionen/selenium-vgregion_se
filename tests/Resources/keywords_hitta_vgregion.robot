@@ -6,7 +6,7 @@ Library  String
 
 Make A Search 1
 
-    [Documentation] Tests search bar on page
+    # [Documentation] Tests search bar on page
 
     Input Text                  css:#search     Västra Götalandsregionen satsar på kunskapscentrum i Skaraborg
     Click Element               css:#search-button
@@ -17,7 +17,7 @@ Make A Search 1
 
 Make A Search 2
 
-    [Documentation] Tests search bar on page
+    # [Documentation] Tests search bar on page
 
     Input Text                  css:#search     Närsjukvårdsteam, södra Skaraborg
     Click Element               css:#search-button
@@ -29,7 +29,7 @@ Make A Search 2
 
 Save Search
 
-    [Documentation] Tries to save a search and view it on page "Sparade Sökningar"
+    # [Documentation] Tries to save a search and view it on page "Sparade Sökningar"
 
     Input Text                  css:#search     Närsjukvårdsteam, södra Skaraborg
     Click Element               css:#search-button
@@ -40,7 +40,7 @@ Save Search
 
 Compare Filter Results
 
-    [Documentation] Tests search results with input in relation to results with input and filters. Should be only input>input+filters.
+    # [Documentation] Tests search results with input in relation to results with input and filters. Should be only input>input+filters.
 
     Input Text                  css:#search     vård
     Click Element               css:#search-button

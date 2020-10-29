@@ -8,7 +8,7 @@ Library  checkStatusCode.py
 
 Test Links
 
-    [Documentation] Verifies links are visible on page
+    # [Documentation] Verifies links are visible on page
 
     Wait Until Element Is Visible       css:#main-content > p:nth-child(4) > a
     Wait Until Element Is Visible       css:#main-content > p:nth-child(5) > a
