@@ -1,6 +1,8 @@
 """
 Validates HTML
 """
+import logging
+import json
 import requests
 
 
@@ -24,12 +26,24 @@ def check_w3c_valid(url):
                                  headers=headers,
                                  data=html,
                                  params=params)
+    w3c_response = json.loads(w3c_response.text)
+
+    for message in w3c_response['messages']:
+        if message.get('type') == 'error':
+            logging.error('on line %s: %s',
+                          message['lastLine'],
+                          message['message'])
+        else:
+            logging.warning('on line %s: %s',
+                            message['lastLine'],
+                            message['message'])
+
     return w3c_response
 
 
 """
 If file is executed on itself then call a definition,
-mostly for testing purposes (sorry Säffle)
+mostly for testing purposes (sorry Båstad)
 """
 if __name__ == '__main__':
-    print(check_w3c_valid('https://www.saffle.se/').text)
+    print(check_w3c_valid('http://www.bastad.se/'))
