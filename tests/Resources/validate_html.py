@@ -28,21 +28,20 @@ def check_w3c_valid(url, timeout=20):
                                  params=params)
     w3c_response = json.loads(w3c_response.text)
 
-    errors_and_warnings = 0
+    errors = 0
 
     for message in w3c_response['messages']:
         if message.get('type') == 'error':
-            errors_and_warnings += 1
+            errors += 1
             logging.error('on line %s: %s',
                           message['lastLine'],
                           message['message'])
         else:
-            errors_and_warnings += 1
             logging.warning('on line %s: %s',
                             message['lastLine'],
                             message['message'])
 
-    return errors_and_warnings == 0
+    return errors == 0
 
 
 """
