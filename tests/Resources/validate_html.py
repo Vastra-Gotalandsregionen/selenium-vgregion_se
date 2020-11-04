@@ -6,13 +6,13 @@ import json
 import requests
 
 
-def check_w3c_valid(url):
+def check_w3c_valid(url, timeout=20):
     """
     Gets the HTML from an url and posts that URL to the w3c Validator
     """
 
     # Get our markup
-    response = requests.get(url, timeout=20)
+    response = requests.get(url, timeout=timeout)
 
     html = response.text.encode('utf-8')
 
