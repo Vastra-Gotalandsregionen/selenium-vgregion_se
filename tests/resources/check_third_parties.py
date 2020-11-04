@@ -34,4 +34,4 @@ If file is executed on itself then call a definition,
 mostly for testing purposes
 """
 if __name__ == '__main__':
-    print(only_allowed_third_parties('http://vgregion.se'))
+    print(only_allowed_third_parties('https://vgregion.se'))
