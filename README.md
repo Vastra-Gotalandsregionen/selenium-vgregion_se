@@ -19,7 +19,7 @@
 
 Here's an excellent guide: [How to execute robot framework tests](https://gist.github.com/GLMeece/c26aae72fb1f8aa5192065793aab3477)
 
-## From IDE ##
+## How to run tests from IDE ##
 
 ### Sublime text ###
 
