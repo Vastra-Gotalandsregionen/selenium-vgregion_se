@@ -1,3 +1,7 @@
+# Settings file
+# Credentials
+email-credentials.json
+
 # Webstorm settings
 .idea/
 
