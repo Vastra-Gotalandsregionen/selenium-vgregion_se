@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32eb2381-880e-4789-9c62-3aab6ccf9e42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/regional_lagesrapport_covid-19.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
@@ -51,8 +50,8 @@
       <recent name="C:\Users\abram\Vgr\selenium-vgregion_se\tests\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test Lyssna">
-    <configuration name="Test Likahöjdblock" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Test Filtertype Kommun">
+    <configuration name="Test Filtertype Anställningsform" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +64,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Likahöjdblock&quot; likahöjdblock.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Test Filtertype Anställningsform&quot; sök_jobb_VGR.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -73,7 +72,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Links" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test Filtertype Förvaltning" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,7 +85,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Links&quot; sidlistningsblock.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Test Filtertype Förvaltning&quot; sök_jobb_VGR.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -94,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test Listen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test Filtertype Kommun" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,7 +106,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Test Listen&quot; covid19_corona.robot" />
+      <option name="PARAMETERS" value=" -t &quot;Test Filtertype Kommun&quot; sök_jobb_VGR.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Filtertype Yrkesområde" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ka.balno1\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Test Filtertype Yrkesområde&quot; sök_jobb_VGR.robot" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -136,41 +156,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Verify Header Is Visible" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\ka.balno1\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value=" -t &quot;Verify Header Is Visible&quot; folktandvården.robot" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.Test Links" />
-      <item itemvalue="Python.Test Listen" />
-      <item itemvalue="Python.Verify Header Is Visible" />
-      <item itemvalue="Python.Test Likahöjdblock" />
       <item itemvalue="Python.Test Lyssna" />
+      <item itemvalue="Python.Test Filtertype Yrkesområde" />
+      <item itemvalue="Python.Test Filtertype Förvaltning" />
+      <item itemvalue="Python.Test Filtertype Anställningsform" />
+      <item itemvalue="Python.Test Filtertype Kommun" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test Filtertype Kommun" />
+        <item itemvalue="Python.Test Filtertype Anställningsform" />
+        <item itemvalue="Python.Test Filtertype Förvaltning" />
+        <item itemvalue="Python.Test Filtertype Yrkesområde" />
         <item itemvalue="Python.Test Lyssna" />
-        <item itemvalue="Python.Test Likahöjdblock" />
-        <item itemvalue="Python.Verify Header Is Visible" />
-        <item itemvalue="Python.Test Listen" />
-        <item itemvalue="Python.Test Links" />
       </list>
     </recent_temporary>
   </component>
@@ -226,26 +225,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="382" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602593875655" />
-    <state width="1515" height="188" key="GridCell.Tab.0.bottom" timestamp="1603980047929">
+    <state width="1515" height="187" key="GridCell.Tab.0.bottom" timestamp="1605092678098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
-    <state width="1515" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603980047929" />
-    <state width="1515" height="188" key="GridCell.Tab.0.center" timestamp="1603980047929">
+    <state width="1515" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605092678098" />
+    <state width="1515" height="187" key="GridCell.Tab.0.center" timestamp="1605092678098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
-    <state width="1515" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603980047929" />
-    <state width="1515" height="188" key="GridCell.Tab.0.left" timestamp="1603980047929">
+    <state width="1515" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605092678098" />
+    <state width="1515" height="187" key="GridCell.Tab.0.left" timestamp="1605092678097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602599189756" />
-    <state width="1515" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603980047929" />
-    <state width="1515" height="188" key="GridCell.Tab.0.right" timestamp="1603980047929">
+    <state width="1515" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605092678097" />
+    <state width="1515" height="187" key="GridCell.Tab.0.right" timestamp="1605092678098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1345" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602599189757" />
-    <state width="1515" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603980047929" />
+    <state width="1515" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605092678098" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1602755313164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
