@@ -1,5 +1,5 @@
 """
-Find, sitemap from robots on a given url, and return a list of pages
+Find, sitemap from robots.txt on a given url, and return a list of pages
 """
 
 import logging
