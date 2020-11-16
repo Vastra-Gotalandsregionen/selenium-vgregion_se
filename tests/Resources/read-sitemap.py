@@ -8,11 +8,11 @@ import requests
 import xml.etree.cElementTree as ET
 
 
-def read_sitemap(url='https://vgregion.se', priority=0.8):
+def read_sitemap(url='https://vgregion.se', priority_threshold=0.8):
     """
     looks for a sitemap in robots.txt, get and parse that sitemap,
     Return a list of URLs with those that have a priority higher or
-    equal to the variable priority.
+    equal to the variable priority_threshold.
     """
 
     robots_response = requests.get(url + '/robots.txt', timeout=20)
@@ -29,7 +29,11 @@ def read_sitemap(url='https://vgregion.se', priority=0.8):
     # Gets the "url"-branch
     for child in sitemap_xml:
         location = child[0]
-        urls.append(location.text)
+
+        priority = float(child[3].text)
+
+        if priority > priority_threshold:
+            urls.append(location.text)
 
     return urls
 
