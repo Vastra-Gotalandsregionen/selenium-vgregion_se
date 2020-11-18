@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 
 Expandera Kontaktblock Test
 
-    ${width}	${height} =	            Get Element Size	css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.kivcontact__column-container
+    ${width}	${height} =	            Get Element Size	css:.department-one div.kivcontact__column-container
     Log                                 ${height}
     Sleep                               1s
     Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.block__row.kivcontact__expandrow > div
@@ -27,18 +27,18 @@ Test Flikar
 
 Test Kontaktuppgifter Block Info Is Correct
 
-    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.block__row.kivcontact__expandrow > div
-    Wait Until Element Contains         css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.kivcontact__column-container > div:nth-child(1) > div:nth-child(1) > div.media-body    031
-    Wait Until Element Contains         css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.kivcontact__column-container > div:nth-child(1) > div:nth-child(2)   måndag
-    Wait Until Element Contains         css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.kivcontact__column-container > div:nth-child(2) > div:nth-child(1)   måndag
-    Wait Until Element Contains         css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.kivcontact__column-container > div:nth-child(2) > div:nth-child(3)    Halmtorget 1
+    Click Element                       css:.kivcontact__column-container
+    Wait Until Element Contains         css:.kivcontact__column-container   031
+    Wait Until Element Contains         css:.kivcontact__column-container   måndag
+    Wait Until Element Contains         css:.kivcontact__column-container   måndag
+    Wait Until Element Contains         css:.kivcontact__column-container   Halmtorget 1
 
 Test Sjuk Kväll Eller Helg First In List
 
-    Wait Until Page Contains Element    css:#main-content > div > div.department-wrapper > div.right-column.department-two > div:nth-child(1) > div
-    Click Element                       css:#form0 > div > div
-    Press Keys                          css:#form0 > div > div      ARROW_DOWN
-    Press Keys                          css:#form0 > div > div      ENTER
+    Wait Until Page Contains Element    css:.dropdownblock
+    Click Element                       css:#form0 select
+    Press Keys                          css:#form0 select      ARROW_DOWN
+    Press Keys                          css:#form0 select     ENTER
     Click Element                       css:#form0 > div > input
     Sleep                               2s
     ${statusCodeResult2}                check status code      ${URL}
