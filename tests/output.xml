@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201118 23:38:57.836" rpa="false">
-<suite id="s1" name="Organisationssök" source="C:\Users\ka.balno1\Documents\GitHub\selenium-vgregion_se\tests\organisationssök.robot">
-<test id="s1-t1" name="Test Searchbar">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201120 14:25:32.916" rpa="false">
+<suite id="s1" name="Hitta Dokument" source="C:\Users\ka.balno1\Documents\GitHub\selenium-vgregion_se\tests\hitta_dokument.robot">
+<test id="s1-t1" name="Test searchbar With Input">
 <kw name="Open Page" library="keywords_general" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -9,67 +9,83 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201118 23:38:58.291" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20201118 23:38:58.291" endtime="20201118 23:39:00.503"></status>
+<msg timestamp="20201120 14:25:33.413" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20201120 14:25:33.413" endtime="20201120 14:25:35.681"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20201118 23:39:00.504" level="INFO">Opening url 'https://www.narhalsan.se/hitta-mottagning/'</msg>
-<status status="PASS" starttime="20201118 23:39:00.504" endtime="20201118 23:39:00.989"></status>
+<msg timestamp="20201120 14:25:35.681" level="INFO">Opening url 'http://hittadokument.vgregion.se/'</msg>
+<status status="PASS" starttime="20201120 14:25:35.681" endtime="20201120 14:25:36.357"></status>
 </kw>
-<status status="PASS" starttime="20201118 23:38:58.291" endtime="20201118 23:39:00.990"></status>
+<status status="PASS" starttime="20201120 14:25:33.403" endtime="20201120 14:25:36.358"></status>
 </kw>
-<kw name="Compare Searchbar With And Without Filters" library="keywords_organisationssök">
+<kw name="Test searchbar With Input" library="keywords_hitta_dokument">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:search</arg>
+<arg>vård</arg>
+</arguments>
+<msg timestamp="20201120 14:25:36.358" level="INFO">Typing text 'vård' into text field 'id:search'.</msg>
+<status status="PASS" starttime="20201120 14:25:36.358" endtime="20201120 14:25:36.433"></status>
+</kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>id:SearchButton</arg>
+<arg>id:search-button</arg>
 </arguments>
-<msg timestamp="20201118 23:39:00.992" level="INFO">Clicking element 'id:SearchButton'.</msg>
-<status status="PASS" starttime="20201118 23:39:00.990" endtime="20201118 23:39:01.819"></status>
+<msg timestamp="20201120 14:25:36.434" level="INFO">Clicking element 'id:search-button'.</msg>
+<status status="PASS" starttime="20201120 14:25:36.433" endtime="20201120 14:25:37.558"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>1s</arg>
+<arg>2s</arg>
 </arguments>
-<msg timestamp="20201118 23:39:02.822" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201118 23:39:01.820" endtime="20201118 23:39:02.822"></status>
+<msg timestamp="20201120 14:25:39.563" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201120 14:25:37.559" endtime="20201120 14:25:39.563"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>css:[class="file pdf search-result-item"]</arg>
+</arguments>
+<status status="PASS" starttime="20201120 14:25:39.563" endtime="20201120 14:25:39.572"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
-<arg>css:[class="vgr-search-details__heading"]</arg>
+<arg>css:.results</arg>
 </arguments>
 <assign>
 <var>${searchresultnumber}</var>
 </assign>
-<msg timestamp="20201118 23:39:03.037" level="INFO">${searchresultnumber} = Din sökning genererade 301 träffar</msg>
-<status status="PASS" starttime="20201118 23:39:02.822" endtime="20201118 23:39:03.037"></status>
+<msg timestamp="20201120 14:25:39.598" level="INFO">${searchresultnumber} = Din sökning gav följande träffar: 195 i Regionövergripande, 5005 i Hela regionen, 425 i Vårdhandboken</msg>
+<status status="PASS" starttime="20201120 14:25:39.572" endtime="20201120 14:25:39.598"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${searchresultnumber}</arg>
 </arguments>
-<msg timestamp="20201118 23:39:03.038" level="INFO">Din sökning genererade 301 träffar</msg>
-<status status="PASS" starttime="20201118 23:39:03.038" endtime="20201118 23:39:03.038"></status>
+<msg timestamp="20201120 14:25:39.598" level="INFO">Din sökning gav följande träffar: 195 i Regionövergripande, 5005 i Hela regionen, 425 i Vårdhandboken</msg>
+<status status="PASS" starttime="20201120 14:25:39.598" endtime="20201120 14:25:39.598"></status>
 </kw>
 <kw name="Remove String" library="String">
 <doc>Removes all ``removables`` from the given ``string``.</doc>
 <arguments>
 <arg>${searchresultnumber}</arg>
-<arg>Din sökning genererade</arg>
-<arg>träffar</arg>
+<arg>Din sökning gav följande träffar: 195 i Regionövergripande,</arg>
+<arg>i Hela regionen, 425 i Vårdhandboken</arg>
 </arguments>
 <assign>
 <var>${searchresultnumber}</var>
 </assign>
-<msg timestamp="20201118 23:39:03.038" level="INFO">${searchresultnumber} =  301 </msg>
-<status status="PASS" starttime="20201118 23:39:03.038" endtime="20201118 23:39:03.038"></status>
+<msg timestamp="20201120 14:25:39.598" level="INFO">${searchresultnumber} =  5005 </msg>
+<status status="PASS" starttime="20201120 14:25:39.598" endtime="20201120 14:25:39.598"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -79,112 +95,151 @@
 <assign>
 <var>${searchresultnumber}</var>
 </assign>
-<msg timestamp="20201118 23:39:03.038" level="INFO">${searchresultnumber} = 301.0</msg>
-<status status="PASS" starttime="20201118 23:39:03.038" endtime="20201118 23:39:03.038"></status>
+<msg timestamp="20201120 14:25:39.598" level="INFO">${searchresultnumber} = 5005.0</msg>
+<status status="PASS" starttime="20201120 14:25:39.598" endtime="20201120 14:25:39.598"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${searchresultnumber}</arg>
 </arguments>
-<msg timestamp="20201118 23:39:03.039" level="INFO">301.0</msg>
-<status status="PASS" starttime="20201118 23:39:03.039" endtime="20201118 23:39:03.039"></status>
+<msg timestamp="20201120 14:25:39.598" level="INFO">5005.0</msg>
+<status status="PASS" starttime="20201120 14:25:39.598" endtime="20201120 14:25:39.598"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:select-1</arg>
+</arguments>
+<msg timestamp="20201120 14:25:39.598" level="INFO">Clicking element 'id:select-1'.</msg>
+<status status="PASS" starttime="20201120 14:25:39.598" endtime="20201120 14:25:39.669"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#select-1 &gt; optgroup:nth-child(2) &gt; option:nth-child(1)</arg>
+</arguments>
+<msg timestamp="20201120 14:25:39.669" level="INFO">Clicking element 'css:#select-1 &gt; optgroup:nth-child(2) &gt; option:nth-child(1)'.</msg>
+<status status="PASS" starttime="20201120 14:25:39.669" endtime="20201120 14:25:39.713"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:[class="filter-submit button"][value="Sök med filter"]</arg>
+</arguments>
+<msg timestamp="20201120 14:25:39.714" level="INFO">Clicking element 'css:[class="filter-submit button"][value="Sök med filter"]'.</msg>
+<status status="PASS" starttime="20201120 14:25:39.713" endtime="20201120 14:25:40.777"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201118 23:39:05.039" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201118 23:39:03.039" endtime="20201118 23:39:05.039"></status>
+<msg timestamp="20201120 14:25:42.783" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201120 14:25:40.777" endtime="20201120 14:25:42.783"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
-<arg>css:#main-content &gt; div.row.content-area-wrapper &gt; div.block.display-option-100.organizationsearchcontrolblock &gt; div &gt; div.vgr-search.vgr-toggle &gt; button</arg>
+<arg>css:[class="file pdf search-result-item"]</arg>
 </arguments>
-<msg timestamp="20201118 23:39:05.039" level="INFO">Clicking element 'css:#main-content &gt; div.row.content-area-wrapper &gt; div.block.display-option-100.organizationsearchcontrolblock &gt; div &gt; div.vgr-search.vgr-toggle &gt; button'.</msg>
-<status status="PASS" starttime="20201118 23:39:05.039" endtime="20201118 23:39:05.196"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20201118 23:39:06.197" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201118 23:39:05.196" endtime="20201118 23:39:06.197"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>css:#SelectedMunicipality</arg>
-</arguments>
-<msg timestamp="20201118 23:39:06.197" level="INFO">Clicking element 'css:#SelectedMunicipality'.</msg>
-<status status="PASS" starttime="20201118 23:39:06.197" endtime="20201118 23:39:06.263"></status>
+<status status="PASS" starttime="20201120 14:25:42.783" endtime="20201120 14:25:42.793"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201118 23:39:07.266" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201118 23:39:06.264" endtime="20201118 23:39:07.266"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>css:#SelectedMunicipality &gt; option:nth-child(13)</arg>
-</arguments>
-<msg timestamp="20201118 23:39:07.266" level="INFO">Clicking element 'css:#SelectedMunicipality &gt; option:nth-child(13)'.</msg>
-<status status="PASS" starttime="20201118 23:39:07.266" endtime="20201118 23:39:07.311"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>id:SearchButton</arg>
-</arguments>
-<msg timestamp="20201118 23:39:07.312" level="INFO">Clicking element 'id:SearchButton'.</msg>
-<status status="PASS" starttime="20201118 23:39:07.311" endtime="20201118 23:39:08.313"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3s</arg>
-</arguments>
-<msg timestamp="20201118 23:39:11.322" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20201118 23:39:08.313" endtime="20201118 23:39:11.322"></status>
+<msg timestamp="20201120 14:25:43.803" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201120 14:25:42.793" endtime="20201120 14:25:43.803"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
-<arg>css:[class="vgr-search-details__heading"]</arg>
+<arg>css:.results</arg>
 </arguments>
 <assign>
 <var>${searchresultnumber2}</var>
 </assign>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201118 23:39:11.650" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201118 23:39:11.322" endtime="20201118 23:39:11.650"></status>
+<msg timestamp="20201120 14:25:43.822" level="INFO">${searchresultnumber2} = Din sökning gav följande träffar: 195 i Regionövergripande, 507 i Hela regionen, 425 i Vårdhandboken</msg>
+<status status="PASS" starttime="20201120 14:25:43.803" endtime="20201120 14:25:43.822"></status>
 </kw>
-<msg timestamp="20201118 23:39:11.654" level="FAIL">Element with locator 'css:[class="vgr-search-details__heading"]' not found.</msg>
-<status status="FAIL" starttime="20201118 23:39:11.322" endtime="20201118 23:39:11.654"></status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+</arguments>
+<msg timestamp="20201120 14:25:43.822" level="INFO">Din sökning gav följande träffar: 195 i Regionövergripande, 507 i Hela regionen, 425 i Vårdhandboken</msg>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:43.822"></status>
 </kw>
-<status status="FAIL" starttime="20201118 23:39:00.990" endtime="20201118 23:39:11.654"></status>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+<arg>Din sökning gav följande träffar: 195 i Regionövergripande,</arg>
+<arg>i Hela regionen, 425 i Vårdhandboken</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber2}</var>
+</assign>
+<msg timestamp="20201120 14:25:43.822" level="INFO">${searchresultnumber2} =  507 </msg>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:43.822"></status>
 </kw>
-<status status="FAIL" starttime="20201118 23:38:58.290" endtime="20201118 23:39:11.654" critical="yes">Element with locator 'css:[class="vgr-search-details__heading"]' not found.</status>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+</arguments>
+<assign>
+<var>${searchresultnumber2}</var>
+</assign>
+<msg timestamp="20201120 14:25:43.822" level="INFO">${searchresultnumber2} = 507.0</msg>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:43.822"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${searchresultnumber2}</arg>
+</arguments>
+<msg timestamp="20201120 14:25:43.822" level="INFO">507.0</msg>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:43.822"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${searchresultnumber2} &lt; ${searchresultnumber}</arg>
+</arguments>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:43.822"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>0 &lt; ${searchresultnumber}</arg>
+</arguments>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:43.822"></status>
+</kw>
+<status status="PASS" starttime="20201120 14:25:36.358" endtime="20201120 14:25:43.822"></status>
+</kw>
+<kw name="End Test" library="keywords_general" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:46.423"></status>
+</kw>
+<status status="PASS" starttime="20201120 14:25:43.822" endtime="20201120 14:25:46.423"></status>
+</kw>
+<status status="PASS" starttime="20201120 14:25:33.403" endtime="20201120 14:25:46.423" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20201118 23:38:57.836" endtime="20201118 23:39:11.655"></status>
+<status status="PASS" starttime="20201120 14:25:32.916" endtime="20201120 14:25:46.423"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Organisationssök">Organisationssök</stat>
+<stat pass="1" fail="0" id="s1" name="Hitta Dokument">Hitta Dokument</stat>
 </suite>
 </statistics>
 <errors>

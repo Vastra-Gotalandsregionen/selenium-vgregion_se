@@ -9,7 +9,7 @@ Compare Searchbar With And Without Filters
 
     Click Element               id:SearchButton
     Sleep                                   1s
-    ${searchresultnumber} =     Get Text     css:[class="vgr-search-details__heading"]
+    ${searchresultnumber} =     Get Text     css:.vgr-search-details__heading
     Log                         ${searchresultnumber}
     ${searchresultnumber} =     Remove String        ${searchresultnumber}   Din sökning genererade      träffar
     ${searchresultnumber} =     Convert To Number  ${searchresultnumber}
@@ -22,7 +22,7 @@ Compare Searchbar With And Without Filters
     Click Element               css:#SelectedMunicipality > option:nth-child(13)
     Click Element               id:SearchButton
     Sleep                                   3s
-    ${searchresultnumber2} =    Get Text     css:[class="vgr-search-details__heading"]
+    ${searchresultnumber2} =    Get Text     css:.vgr-search-details__heading
     Log                         ${searchresultnumber2}
     ${searchresultnumber2} =    Remove String        ${searchresultnumber2}   Din sökning genererade      träffar
     ${searchresultnumber2} =    Convert To Number  ${searchresultnumber2}
