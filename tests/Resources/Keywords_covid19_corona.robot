@@ -29,8 +29,3 @@ Test Link Folkhälsomyndighetens information till allmänheten
     Log To Console                          ${statusCodeResult2}          console=yes
     Should Be True                          ${statusCodeResult2}   'true'
 
-Verify If Educational Video Appears
-    # [Documentation]
-    Sleep                                   5s
-    Wait Until Page Contains Element        xpath://*[@id="player"]
-

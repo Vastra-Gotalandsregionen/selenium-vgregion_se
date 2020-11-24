@@ -23,9 +23,6 @@ Test Link Folkhälsomyndighetens information till allmänheten
 
     Test Link Folkhälsomyndighetens information till allmänheten
 
-Verify Educational Video
-
-    Verify If Educational Video Appears
 
 Verify Header Is Visible
 
@@ -39,6 +36,3 @@ Verify Sök Function
 Test Listen
 
     Test Listen Function
-
-Fetch Links And Check Responsecode
-    Get All Links And Return Response Code

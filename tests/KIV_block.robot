@@ -8,7 +8,7 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/om-vgr/organisation-och-verksamhet/kontakt-regionledningen
+${URL} =  https://www.vgregion.se/om-vgr/organisation-och-verksamhet/koncernkontoret/koncernstab-kommunikation-och-externa-relationer/
 
 
 
@@ -17,4 +17,3 @@ ${URL} =  https://www.vgregion.se/om-vgr/organisation-och-verksamhet/kontakt-reg
 Test KIV Block
 
     Check KIV Block Visibility
-    Check KIV Block Visibility 2

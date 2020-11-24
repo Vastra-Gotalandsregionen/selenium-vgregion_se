@@ -7,6 +7,7 @@ Library  String
 
 Test searchbar With Input
 
+    Sleep                                   1s
     Input Text                              id:search       vård
     Click Element                           id:search-button
     Sleep                                   2s
@@ -32,6 +33,7 @@ Test searchbar With Input
 
 Test searchbar Without Input
 
+    Sleep                                   2s
     Click Element                           id:search-button
     Sleep                                   2s
     Wait Until Page Contains Element        css:[class="file pdf search-result-item"]
