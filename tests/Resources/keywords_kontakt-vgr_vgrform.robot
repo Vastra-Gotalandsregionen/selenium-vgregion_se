@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation
 Library  SeleniumLibrary
+Library  OperatingSystem
+
 *** Keywords ***
 
 Verify Phonenumber Is Visible
