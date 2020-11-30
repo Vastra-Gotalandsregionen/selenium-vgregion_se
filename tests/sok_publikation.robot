@@ -14,11 +14,11 @@ ${SEARCHSTRING} =  Medicinska Riktlinje
 
 *** Test Cases ***
 
-# Test Search With Input
-#     Test Search With Input
+Test Search With Input
+    Test Search With Input
 
-# Test Search Without Input
-#     Test Search Without Input
+Test Search Without Input
+    Test Search Without Input
 
 Test Search Letter Index
     Test Search Letter Index

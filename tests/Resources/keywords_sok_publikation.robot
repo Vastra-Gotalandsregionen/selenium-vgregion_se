@@ -25,6 +25,7 @@ Test Search Without Input
     Should Be True                          ${SearchResultAmount} > 140  # Magic number, there is 160 matches 2020-11-30
 
 Test Search Letter Index
+
     Wait Until Page Contains Element        css:.pagelistblock__charachter  # Sic! Will break if typo is fixed
     # We are clicking the letter S, since the id with only S is more likely to
     # collide (as have done with q before, but there is nothing on Q here...)
