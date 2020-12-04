@@ -21,6 +21,15 @@ Here's an excellent guide: [How to execute robot framework tests](https://gist.g
 
 ## How to run tests from IDE ##
 
+### Installing Pycharm ###
+
+1. [Download Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows)
+2. Install and open program, click configure
+3. Type Intellibot into the searchbar
+4. Choose plugin Intellibot @SeleniumLibrary Patched and install
+5. Install plugins: Robot FrameWork Support, Run Robot FrameWork TestCase
+6. Restart Pycharm
+
 ### Sublime text ###
 
 1. Make sure to have the [Python 3-package](https://packagecontrol.io/packages/Python%203)
@@ -36,3 +45,5 @@ Here's an excellent guide: [How to execute robot framework tests](https://gist.g
 ## License ##
 
 This code is released under the MIT license.
+
+

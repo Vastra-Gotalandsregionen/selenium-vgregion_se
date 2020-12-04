@@ -15,7 +15,7 @@ def check_status_code(url="https://api.github.com/user"):
     status_code = str(response.status_code)
 
     if status_code.startswith("4") or status_code.startswith("5"):
-        logging.error('%s: %s', status_code, response.reason)
+        logging.error('%s responds: %s %s', url, status_code, response.reason)
 
     return status_code.startswith("2")
 

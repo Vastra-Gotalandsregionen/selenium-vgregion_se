@@ -7,12 +7,10 @@ Library  SeleniumLibrary
 
 Compare Sizes Of Blocks
 
-    Sleep                               1s
-    ${width}	${height} =	            Get Element Size	css:#main-content > div.row.content-area-wrapper > div:nth-child(2) > div > div.block.display-option-50.kivpersonblock
+    Wait Until Page Contains Element    css:.equalheightblock__row
+    Sleep                               2s
+    ${width}    ${height} =             Get Element Size    css:.equalheightblock__row > :nth-child(1)
     Log                                 ${height}
-    Sleep                               1s
-    ${width2}	${height2} =	        Get Element Size	css:#main-content > div.row.content-area-wrapper > div:nth-child(2) > div > div.block.display-option-50.pagelistblock
+    ${width2}   ${height2} =            Get Element Size    css:.equalheightblock__row > :nth-child(2)
     Log                                 ${height2}
-    Sleep                               1s
     Should Be True                      ${height} == ${height2}
-    Wait Until Page Contains Element    css:#main-content > div.row.content-area-wrapper > div:nth-child(2)
