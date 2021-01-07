@@ -14,6 +14,9 @@ log.html
 output.xml
 report.html
 
+# generic output text files. TODO: Check if it should be changed to something more specific
+*output.txt
+
 # .gitignore template from https://github.com/github/gitignore/blob/master/Python.gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
