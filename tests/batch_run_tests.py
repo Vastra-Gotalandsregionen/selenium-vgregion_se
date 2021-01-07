@@ -16,11 +16,16 @@ def batch_run_tests(files=None):
 
     log_file = open('batch_log_output.txt', 'w')
 
-    for file in files:
+    for index, file in enumerate(files):
         print(file)
+
         # Things done for each file
         # robot.run(file + ' -d logs -o ' + file + ' -l' + file)
         robot.run(file, stdout=log_file)
+
+        # To limit amount of tests (change to positive number)
+        if index == -1:
+            break
 
 
 """
