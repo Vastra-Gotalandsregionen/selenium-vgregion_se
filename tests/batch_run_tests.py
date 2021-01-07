@@ -11,7 +11,7 @@ def batch_run_tests(files=None):
     If none given it runs all .robot files instead.
     """
 
-    if files is not None:
+    if files is None:
         files = glob.glob("*.robot")
 
     log_file = open('batch_log_output.txt', 'w')
