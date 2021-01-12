@@ -29,7 +29,7 @@ Test Search Letter Index
     Wait Until Page Contains Element        css:.pagelistblock__charachter  # Sic! Will break if typo is fixed
     # We are clicking the letter S, since the id with only S is more likely to
     # collide (as have done with q before, but there is nothing on Q here...)
-    ${IndexLetterElement} =                 Get WebElement                  xpath=//a[@class="pagelistblock__charachter"][contains(text(),"S")] # Sic! Will break if typo is fixed
+    ${IndexLetterElement} =                 Get WebElement                  xpath=//a[@class="pagelistblock__charachter"][contains(text(),"S")]  # Sic! Will break if typo is fixed
     ${Fragment} =                           Get Element Attribute           ${IndexLetterElement}   href
     Log                                     ${Fragment} # It seems this isn't a fragment but the whole URL + fragment. But it still works so :shrug:
     Click Element                           ${IndexLetterElement}

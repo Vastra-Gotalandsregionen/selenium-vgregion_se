@@ -18,6 +18,3 @@ Test Searchbar
 
 Test Invalid Input
     Make Search With Invalid Input
-
-Fetch Links And Check Responsecode
-    Get All Links And Return Response Code

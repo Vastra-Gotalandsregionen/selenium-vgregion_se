@@ -14,12 +14,6 @@ ${URL} =  https://folktandvarden.vgregion.se/
 
 *** Test Cases ***
 
-Test Lyssna
-    Test Listen Function
-
-Verify Sök Function
-    Verify Sök Function Is Working
-
 Verify Header Is Visible
     Verify If Header Menu Is Visible
 
