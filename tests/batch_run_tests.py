@@ -3,14 +3,11 @@ Run all or some tests
 """
 
 import argparse
-import getopt
 import glob
 import os
-import sys
-
+from pathlib import Path
 import robot
 from robot import rebot
-from pathlib import Path
 
 
 def parse_argument():
@@ -100,5 +97,10 @@ If file is executed on itself then call a definition,
 mostly for testing purposes
 """
 if __name__ == '__main__':
-    InputFiles = ['hitta_dokument.robot']
+    InputFiles = ['hitta_dokument.robot',
+                  'hitta_vgregion.robot',
+                  'organisationssök.robot',
+                  'search_page_listing_block.robot',
+                  'sidlistningsblock.robot',
+                  'sök_jobb_VGR.robot']
     print(batch_run_tests(InputFiles))
