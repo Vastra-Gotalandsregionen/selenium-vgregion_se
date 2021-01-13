@@ -15,14 +15,26 @@ from pathlib import Path
 
 def parse_argument():
     """
-    Parses optional arguments for the location of the .robot file and generated output files.
+    Parses optional arguments for the location of the .robot file and\
+    generated output files.
     This makes it possible to customise the paths for different environments.
     """
-    currentDir = str(get_current_dir())
+    current_dir = str(get_current_dir())
 
-    parser = argparse.ArgumentParser(description='Runs .robot files and creates output that can be used by Azure DevOps Pipelines')
-    parser.add_argument('--destdir', dest='destdir', type=str, default=currentDir, help='Absolut path to directory that contains the .robot files')
-    parser.add_argument('--outputdir', dest='outputdir', type=str, default=currentDir, help='Absolut path to the output directory for the test results')
+    parser = argparse.ArgumentParser(description='Runs .robot files and\
+        creates output that can be used by Azure DevOps Pipelines')
+    parser.add_argument('--destdir',
+                        dest='destdir',
+                        type=str,
+                        default=current_dir,
+                        help='Absolut path to directory that contains the\
+                              .robot files')
+    parser.add_argument('--outputdir',
+                        dest='outputdir',
+                        type=str,
+                        default=current_dir,
+                        help='Absolute path to the output directory for\
+                              the test results')
     # Return dictionary of args
     return vars(parser.parse_args())
 
@@ -31,10 +43,12 @@ def get_current_dir():
     """
     Get the directory of the executed Pyhton file (i.e. this file)
     """
-    currentPath = Path(__file__).resolve()  # Resolve to get rid of any symlinks
-    currentDir = currentPath.parent
-    
-    return currentDir
+
+    # Resolve to get rid of any symlinks
+    current_path = Path(__file__).resolve()
+    current_dir = current_path.parent
+
+    return current_dir
 
 
 def batch_run_tests(files=None):
@@ -44,10 +58,10 @@ def batch_run_tests(files=None):
     """
     arguments = parse_argument()
 
-    robotFilesDir = arguments['destdir']
-    outputLogDir = arguments['outputdir']
+    robot_files_dir = arguments['destdir']
+    output_log_dir = arguments['outputdir']
 
-    os.chdir(robotFilesDir)
+    os.chdir(robot_files_dir)
 
     if files is None:
         files = glob.glob("*.robot")
@@ -57,14 +71,24 @@ def batch_run_tests(files=None):
     for index, file in enumerate(files):
         print(file)
 
-        fileName = file.replace(".robot", "")
-        outputFileName = 'output_' +  fileName
+        file_name = file.replace(".robot", "")
+        output_file_name = 'output_' + file_name
 
-        # Run tests and create logs and reports with a uniqe name for each test 
-        robot.run(file, output=outputFileName, log='log_' + fileName, report='report_' + fileName, stdout=log_file)
+        # Run tests and create logs and reports with a uniqe name for each test
+        robot.run(file,
+                  output=output_file_name,
+                  log='log_' + file_name,
+                  report='report_' + file_name,
+                  stdout=log_file)
 
         # Create output with XUnit format
-        rebot(outputLogDir + '\\' + outputFileName + '.xml', xunit='xunitoutput_' + fileName + '.xml')
+        rebot(output_log_dir
+              + '\\'
+              + output_file_name
+              + '.xml',
+              xunit='xunitoutput_'
+              + file_name
+              + '.xml')
 
         # To limit amount of tests (change to positive number)
         if index == -1:
@@ -76,10 +100,5 @@ If file is executed on itself then call a definition,
 mostly for testing purposes
 """
 if __name__ == '__main__':
-    InputFiles = ['hitta_dokument.robot',
-                  'hitta_vgregion.robot',
-                  'organisationssök.robot',
-                  'search_page_listing_block.robot',
-                  'sidlistningsblock.robot',
-                  'sök_jobb_VGR.robot']
+    InputFiles = ['hitta_dokument.robot']
     print(batch_run_tests(InputFiles))

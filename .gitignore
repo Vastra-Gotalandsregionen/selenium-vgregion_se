@@ -13,6 +13,10 @@ debug.log
 log.html
 output.xml
 report.html
+log_*.html
+output_*.xml
+report_*.html
+xunitoutput_*.xml
 
 # generic output text files. TODO: Check if it should be changed to something more specific
 *output.txt
