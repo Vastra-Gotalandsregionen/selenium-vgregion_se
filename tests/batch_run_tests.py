@@ -26,6 +26,7 @@ def parse_argument():
     # Return dictionary of args
     return vars(parser.parse_args())
 
+
 def get_current_dir():
     """
     Get the directory of the executed Pyhton file (i.e. this file)
@@ -56,14 +57,14 @@ def batch_run_tests(files=None):
     for index, file in enumerate(files):
         print(file)
 
-        outputFileName = 'output_' +  file.replace(".robot", "")
+        fileName = file.replace(".robot", "")
+        outputFileName = 'output_' +  fileName
 
-        # Things done for each file
-        # robot.run(file + ' -d logs -o ' + file + ' -l' + file)
-        robot.run(file, output=outputFileName, stdout=log_file)
+        # Run tests and create logs and reports with a uniqe name for each test 
+        robot.run(file, output=outputFileName, log='log_' + fileName, report='report_' + fileName, stdout=log_file)
 
-        # Create XUnit output with a uniqe name for each test
-        rebot(outputLogDir + '\\' + outputFileName + '.xml', xunit='xunit' + outputFileName + '.xml')
+        # Create output with XUnit format
+        rebot(outputLogDir + '\\' + outputFileName + '.xml', xunit='xunitoutput_' + fileName + '.xml')
 
         # To limit amount of tests (change to positive number)
         if index == -1:
