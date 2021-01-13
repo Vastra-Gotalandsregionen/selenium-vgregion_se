@@ -10,7 +10,7 @@
 5. Install [robotframework-selenium2library](https://pypi.org/project/robotframework-selenium2library/) with pip.
 7. Install [requests](https://pypi.org/project/requests/) with pip.
 8. Install [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) with pip
-8. Get [chromedriver](http://chromedriver.chromium.org/downloads) matching your Chrome version.
+9. Get [chromedriver](http://chromedriver.chromium.org/downloads) matching your Chrome version.
 
 ## How to run tests from terminal ##
 

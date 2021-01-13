@@ -18,7 +18,8 @@ Use Hitta Klinik With Filters
     # [Documentation] Tests search function "Hitta Klinik" with filters
 
     Input Text                          css:#SearchQuery        Specialistkliniken för endodonti Göteborg
-    #Cant get css for filter element to work
+    # Click to close auto suggestions
+    Click Element                       css:.organizationsearchcontrolblock .block__heading
     Sleep                               1s
     Click Element                       css:.vgr-search__expandtoggle
     Sleep                               1s

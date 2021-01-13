@@ -23,11 +23,5 @@ Verify Sök Function
 Verify Header Is Visible
     Verify If Header Menu Is Visible
 
-Verify Skicka Fråga
-    Test Contact Message
-
 Verify Phonenumber
     Verify Phonenumber Is Visible
-
-Fetch Links And Check Responsecode
-    Get All Links And Return Response Code
