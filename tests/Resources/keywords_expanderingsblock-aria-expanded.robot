@@ -14,3 +14,4 @@ Expanderingsblock-aria
     ${aria-expanded}                    Get Element Attribute          css:button.expand-block__clickable-row  aria-expanded
     Log                                 ${aria-expanded}
     Should be Equal                     ${aria-expanded}               true
+
