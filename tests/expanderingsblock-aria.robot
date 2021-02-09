@@ -14,6 +14,6 @@ ${URL} =  https://www.vgregion.se/webbhandboken/block/expanderingsblock/
 
 *** Test Cases ***
 
-Test Expanderingsblock-aria
+Test aria-expanded set when clicked
 
-    Expanderingsblock-aria
+    aria-expanded set when clicked
