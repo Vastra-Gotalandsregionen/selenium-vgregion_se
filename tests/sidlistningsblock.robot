@@ -8,16 +8,16 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/regional-utveckling/verksamhetsomraden
+${URL} =  https://www.vgregion.se/webbhandboken/block/sidlistningsblock/
 
 
 
 *** Test Cases ***
 
-Test Links
-
-    Get All Links And Return Response Code
-
 Test Sidlistningsblock
 
     Sidlistningsblock Test
+
+#Test Links
+
+    #Get All Links And Return Response Code
