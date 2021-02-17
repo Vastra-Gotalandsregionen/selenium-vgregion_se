@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 
 Sidlistningsblock Test
 
-    # [Documentation] Verifies that block is existing and contains a link
+    # [Documentation] Verifies that block is existing, contains a link and check statusCode.
 
     Wait Until Element Is Visible               css:.pagelistblock li a
     ${statusCodeResult}                         check status code       ${URL}
