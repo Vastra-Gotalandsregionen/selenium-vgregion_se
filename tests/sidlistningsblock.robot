@@ -8,7 +8,7 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/regional-utveckling/verksamhetsomraden
+${URL} =  https://www.vgregion.se/webbhandboken/block/sidlistningsblock/
 
 
 
