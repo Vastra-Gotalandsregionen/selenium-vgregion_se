@@ -17,7 +17,3 @@ ${URL} =  https://www.vgregion.se/regional-utveckling/verksamhetsomraden
 Test Sidlistningsblock
 
     Sidlistningsblock Test
-
-Test Links
-
-    Get All Links And Return Response Code
