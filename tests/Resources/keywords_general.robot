@@ -52,25 +52,19 @@ Get All Links And Return Response Code
     # [Documentation]     Gets all links on page and tests staus code to be 200
 
     ${AllLinksCount} =          Get Element Count           //a
-    Log                         ${AllLinksCount}
     @{LinkItems}                Create List
     FOR                         ${INDEX}                    IN RANGE                1               ${AllLinksCount}
-        Log                     ${INDEX}
         ${lintext}=             Get Text                    xpath=(//a)[${INDEX}]
-        Log                     ${lintext}
         ${linklength}           Get Length                  ${lintext}
         Run Keyword If          ${linklength}>1             Append To List          ${LinkItems}    ${lintext}
     END
 
     ${LinkSize}=                Get Length                  ${LinkItems}
-    Log                         ${LinkSize}
     FOR                         ${ELEMENT}                  IN                      @{LinkItems}
-        Log                     ${ELEMENT}
 
         #Checks if links return 200-value
         # TODO: Check if this really tests the right URL
         ${statusCodeResult}     check status code           ${URL}
-        Log                     ${statusCodeResult}
         Should Be True          ${statusCodeResult}         'true'
 
 
@@ -80,7 +74,6 @@ Get All Links And Return Response Code
         # rel="noopener"
         # rel="noreferrer"
         ${noanchor}             no anchor target blank      ${URL}
-        Log                     ${noanchor}
         Should Be True          ${noanchor}                 'true'
 
 
@@ -88,7 +81,6 @@ Get All Links And Return Response Code
         # TODO: Move to separate test
         # TODO: Check if this really tests the right URL
         ${checkthirdparties}    only allowed third parties  ${URL}
-        Log                     ${checkthirdparties}
         Should Be true          ${checkthirdparties}        'true'
     END
 

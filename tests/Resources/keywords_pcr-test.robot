@@ -13,9 +13,9 @@ Get All Links Pcr-test
 
 
     ${allPageListLinks} =       Get WebElements             css:.pagelistblock li a
-    ${AllLinksCount} =          Get Length                  ${allPageListLinks}
+    ${allLinksCount} =          Get Length                  ${allPageListLinks}
 
-    FOR                         ${INDEX}                    IN RANGE                        1     ${AllLinksCount}
+    FOR                         ${INDEX}                    IN RANGE                        1     ${allLinksCount}
 
         ${linkurl}=             Get Element Attribute       ${allPageListLinks}[${INDEX}]   href
 
