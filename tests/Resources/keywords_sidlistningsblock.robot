@@ -10,6 +10,7 @@ Sidlistningsblock Test
 
     ${allPageListLinks} =                       Get Webelements         css:.pagelistblock li a
     ${allLinksCount} =                          Get Length              ${allPageListLinks}
+
     FOR                                         ${INDEX}                IN RANGE                                1           ${allLinksCount}
         ${linkUrl} =                            Get Element Attribute   ${allPageListLinks}[${INDEX}]          href
 
