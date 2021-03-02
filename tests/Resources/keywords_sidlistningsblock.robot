@@ -6,10 +6,15 @@ Library  SeleniumLibrary
 
 Sidlistningsblock Test
 
-    # [Documentation] Verifies that block is existing and isnt empty
+    # [Documentation] Get all links on page and tests status code to be 200
 
-    Wait Until Element Is Visible               css:#main-content > div.row.content-area-wrapper > div > div > div
-    Wait Until Element Is Visible               css:#main-content > div.row.content-area-wrapper > div > div > div > ul > li:nth-child(1)
-    ${elementsinblocks} =                       Get Element Count    css:[class="block__row media "]
-    Log                                         ${elementsinblocks}
-    Should Be True                              ${elementsinblocks} > 0
+    ${allPageListLinks} =                       Get Webelements         css:.pagelistblock li a
+    ${allLinksCount} =                          Get Length              ${allPageListLinks}
+
+    FOR                                         ${INDEX}                IN RANGE                                1           ${allLinksCount}
+        ${linkUrl} =                            Get Element Attribute   ${allPageListLinks}[${INDEX}]          href
+
+        #Check if status code is 200
+        ${statusCodeResult}                     Check Status Code       ${linkUrl}
+        Should Be True                          ${statusCodeResult}     true
+    END
