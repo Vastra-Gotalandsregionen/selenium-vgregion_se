@@ -20,6 +20,11 @@ def parse_argument():
 
     parser = argparse.ArgumentParser(description='Runs .robot files and\
         creates output that can be used by Azure DevOps Pipelines')
+    parser.add_argument('--files',
+                        dest='files',
+                        type=str,
+                        default=None,
+                        help='Array of .robot files to run')
     parser.add_argument('--destdir',
                         dest='destdir',
                         type=str,
@@ -60,6 +65,14 @@ def batch_run_tests(files=None):
 
     os.chdir(robot_files_dir)
 
+    # This is a bit backwards and not too clean.
+    # TODO: clean up.
+    if files is None:
+        files = arguments['files']
+
+        if isinstance(files, str):
+            files = files.split(",")
+
     if files is None:
         files = glob.glob("*.robot")
 
@@ -97,10 +110,4 @@ If file is executed on itself then call a definition,
 mostly for testing purposes
 """
 if __name__ == '__main__':
-    InputFiles = ['hitta_dokument.robot',
-                  'hitta_vgregion.robot',
-                  'organisationssök.robot',
-                  'search_page_listing_block.robot',
-                  'sidlistningsblock.robot',
-                  'sök_jobb_VGR.robot']
-    print(batch_run_tests(InputFiles))
+    print(batch_run_tests())
