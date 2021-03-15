@@ -7,8 +7,8 @@ Test Setup  Open Page
 Test Teardown  End Test
 
 *** Variables ***
-${BROWSER} = chrome
-${URL} = https://www.narhalsan.se/hitta-mottagning/
+${BROWSER} =  chrome
+${URL} =  https://www.narhalsan.se/hitta-mottagning/
 
 *** Test Cases ***
 
