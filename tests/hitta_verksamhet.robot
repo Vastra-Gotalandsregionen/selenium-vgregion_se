@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation
-Resource  Resources/keywords_hitta_dokument.robot
+Resource  Resources/keywords_hitta_verksamhet.robot
 Resource  Resources/keywords_general.robot
 Library  SeleniumLibrary
 Test Setup  Open Page
