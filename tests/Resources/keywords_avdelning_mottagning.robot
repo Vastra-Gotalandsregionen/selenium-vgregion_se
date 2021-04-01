@@ -6,16 +6,18 @@ Library  SeleniumLibrary
 
 Expandera Kontaktblock Test
 
-    ${width}	${height} =	            Get Element Size	css:.kivcontact__column-container
+    ${width}	${height} =	            Get Element Size	css:.department-one div.kivcontact__column-container
+    Log                                 ${height}
     Sleep                               1s
-    Click Element                       css:.kivcontact__expandrow
+    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.block__row.kivcontact__expandrow > div
     Sleep                               1s
-    ${width2}	${height2} =	        Get Element Size	css:.kivcontact__column-container
+    ${width2}	${height2} =	        Get Element Size	css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div
+    Log                                 ${height2}
     Should Be True                      ${height} < ${height2}
 
 Test Flikar
 
-    Wait Until Element Contains         css:.vgr-tabs__heading    VÅRD OCH HÄLSA
+    Wait Until Element Contains        css:#tab-1 > div > div > div > div > div > div.block__header    VÅRD OCH HÄLSA
     Sleep                               1s
     Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-three > div:nth-child(7) > div > div.vgr-tabs__bar > ul > li:nth-child(2)
     Wait Until Element Contains         css:#tab-2 > div > div > div > div > div > div.block__header    BESÖK HOS OSS
