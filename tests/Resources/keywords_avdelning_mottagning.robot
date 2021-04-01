@@ -6,11 +6,11 @@ Library  SeleniumLibrary
 
 Expandera Kontaktblock Test
 
-    ${width}	${height} =	            Get Element Size	css:.kivcontact__column-container
+    ${width}    ${height} =             Get Element Size    css:.kivcontact__column-container
     Sleep                               1s
     Click Element                       css:.kivcontact__expandrow
     Sleep                               1s
-    ${width2}	${height2} =	        Get Element Size	css:.kivcontact__column-container
+    ${width2}   ${height2} =            Get Element Size    css:.kivcontact__column-container
     Should Be True                      ${height} < ${height2}
 
 Test Flikar
