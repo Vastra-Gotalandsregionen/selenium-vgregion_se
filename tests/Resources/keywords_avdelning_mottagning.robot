@@ -17,7 +17,7 @@ Test Flikar
 
     Wait Until Element Contains         css:.vgr-tabs__heading    VÅRD OCH HÄLSA
     Sleep                               1s
-    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-three > div:nth-child(7) > div > div.vgr-tabs__bar > ul > li:nth-child(2)
+    Click Element                       css:[aria-controls="tab-2"]
     Wait Until Element Contains         css:#tab-2 > div > div > div > div > div > div.block__header    BESÖK HOS OSS
     Sleep                               1s
     Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-three > div:nth-child(7) > div > div.vgr-tabs__bar > ul > li:nth-child(3)
