@@ -4,9 +4,10 @@ See if our domains work
 import json
 from checkStatusCode import check_status_code
 
+
 def test_domains(file_path="../../domains.json"):
     """
-    Reads a list of domains and see of they respond
+    Reads a list of domains and see if they respond
     """
 
     # Read file
