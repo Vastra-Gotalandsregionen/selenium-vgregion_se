@@ -15,13 +15,13 @@ Expandera Kontaktblock Test
 
 Test Flikar
 
-    Wait Until Element Contains         css:.vgr-tabs__heading    VÅRD OCH HÄLSA
+    Wait Until Element Contains         css:.vgr-tabs__heading       VÅRD OCH HÄLSA
     Sleep                               1s
     Click Element                       css:[aria-controls="tab-2"]
-    Wait Until Element Contains         css:#tab-2 > div > div > div > div > div > div.block__header    BESÖK HOS OSS
+    Wait Until Element Contains         css:#tab-2 .block__header    BESÖK HOS OSS
     Sleep                               1s
-    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-three > div:nth-child(7) > div > div.vgr-tabs__bar > ul > li:nth-child(3)
-    Wait Until Element Contains         css:#tab-3 > div > div > div > div > div > div.block__header > h2   VÄLJ VÅR VÅRDCENTRAL
+    Click Element                       css:[aria-controls="tab-2"]
+    Wait Until Element Contains         css:#tab-3 .block__header    VÄLJ VÅR VÅRDCENTRAL
 
 Test Kontaktuppgifter Block Info Is Correct
 
