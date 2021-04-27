@@ -6,24 +6,22 @@ Library  SeleniumLibrary
 
 Expandera Kontaktblock Test
 
-    ${width}	${height} =	            Get Element Size	css:.department-one div.kivcontact__column-container
-    Log                                 ${height}
+    ${width}    ${height} =             Get Element Size    css:.kivcontact__column-container
     Sleep                               1s
-    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div > div > div.block__row.kivcontact__expandrow > div
+    Click Element                       css:.kivcontact__expandrow
     Sleep                               1s
-    ${width2}	${height2} =	        Get Element Size	css:#main-content > div > div.department-wrapper > div.main-wrapper.department-one > div.row > div
-    Log                                 ${height2}
+    ${width2}   ${height2} =            Get Element Size    css:.kivcontact__column-container
     Should Be True                      ${height} < ${height2}
 
 Test Flikar
 
-    Wait Until Element Contains        css:#tab-1 > div > div > div > div > div > div.block__header    VÅRD OCH HÄLSA
+    Wait Until Element Contains         css:.vgr-tabs__heading       VÅRD OCH HÄLSA
     Sleep                               1s
-    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-three > div:nth-child(7) > div > div.vgr-tabs__bar > ul > li:nth-child(2)
-    Wait Until Element Contains         css:#tab-2 > div > div > div > div > div > div.block__header    BESÖK HOS OSS
+    Click Element                       css:[aria-controls="tab-2"]
+    Wait Until Element Contains         css:#tab-2 .block__header    BESÖK HOS OSS
     Sleep                               1s
-    Click Element                       css:#main-content > div > div.department-wrapper > div.main-wrapper.department-three > div:nth-child(7) > div > div.vgr-tabs__bar > ul > li:nth-child(3)
-    Wait Until Element Contains         css:#tab-3 > div > div > div > div > div > div.block__header > h2   VÄLJ VÅR VÅRDCENTRAL
+    Click Element                       css:[aria-controls="tab-2"]
+    Wait Until Element Contains         css:#tab-3 .block__header    VÄLJ VÅR VÅRDCENTRAL
 
 Test Kontaktuppgifter Block Info Is Correct
 
