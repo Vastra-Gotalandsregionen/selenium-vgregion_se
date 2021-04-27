@@ -8,7 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =       chrome
-${URL} =           https://www.vgregion.se/om-vgr/bestall-eller-ladda-ner-material/
+${VGR_DOMAIN} =  www.vgregion.se
+${URL} =  https://${VGR_DOMAIN}/om-vgr/bestall-eller-ladda-ner-material/
 ${SEARCHSTRING} =  Medicinska Riktlinje
 
 

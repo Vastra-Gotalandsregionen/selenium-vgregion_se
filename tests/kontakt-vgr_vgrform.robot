@@ -8,7 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/kontakt-vgr/?vgrform=1/
+${VGR_DOMAIN} =  www.vgregion.se
+${URL} =  https://${VGR_DOMAIN}/kontakt-vgr/?vgrform=1/
 
 
 

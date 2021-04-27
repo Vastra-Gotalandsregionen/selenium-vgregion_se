@@ -8,7 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/om-vgr/organisation-och-verksamhet/koncernkontoret/koncernstab-kommunikation-och-externa-relationer/
+${VGR_DOMAIN} =  www.vgregion.se
+${URL} =  https://${VGR_DOMAIN}/om-vgr/organisation-och-verksamhet/koncernkontoret/koncernstab-kommunikation-och-externa-relationer/
 
 
 

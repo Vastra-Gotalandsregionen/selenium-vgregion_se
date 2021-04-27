@@ -8,7 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.vgregion.se/jobba-i-vgr/sok-jobb-i-vgr/
+${VGR_DOMAIN} =  www.vgregion.se
+${URL} =  https://${VGR_DOMAIN}/jobba-i-vgr/sok-jobb-i-vgr/
 
 
 *** Test Cases ***
