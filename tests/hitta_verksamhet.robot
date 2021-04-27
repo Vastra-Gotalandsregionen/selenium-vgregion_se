@@ -8,7 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://www.narhalsan.se/hitta-mottagning/
+${NARHALSAN_DOMAIN} =  www.narhalsan.se
+${URL} =  https://${NARHALSAN_DOMAIN}/hitta-mottagning/
 
 *** Test Cases ***
 

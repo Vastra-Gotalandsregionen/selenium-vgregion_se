@@ -8,7 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  http://hittadokument.vgregion.se/
+${HITTA_DOKUMENT_DOMAIN} =  hittadokument.vgregion.se
+${URL} =  https://${HITTA_DOKUMENT_DOMAIN}/
 
 
 *** Test Cases ***

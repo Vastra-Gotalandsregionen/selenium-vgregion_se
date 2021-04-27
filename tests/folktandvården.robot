@@ -8,8 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${URL} =  https://folktandvarden.vgregion.se/
-
+${FTV_DOMAIN} =  folktandvarden.vgregion.se
+${URL} =  https://${FTV_DOMAIN}/
 
 
 *** Test Cases ***

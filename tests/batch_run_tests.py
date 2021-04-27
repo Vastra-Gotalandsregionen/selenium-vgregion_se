@@ -12,8 +12,7 @@ from robot import rebot
 
 def parse_argument():
     """
-    Parses optional arguments for the location of the .robot file and\
-    generated output files.
+    Parses optional arguments that's then gets passed to the robot files.
     This makes it possible to customise the paths for different environments.
     """
     current_dir = str(get_current_dir())
@@ -37,6 +36,17 @@ def parse_argument():
                         default=current_dir,
                         help='Absolute path to the output directory for\
                               the test results')
+    parser.add_argument('--variables',
+                        dest='variables',
+                        type=str,
+                        # The variables argument cannot be empty or else we´re gonna get an exception.
+                        # This is just a default random variable that's not used by any test.
+                        default='DEFAULTVALUE:none',
+                        help='Override variables created in test case files.\
+                              To override which site to run the test cases on, use:\
+                              "NARHALSAN_DOMAIN:site1.vgregion.se,\
+                              VGR_DOMAIN:site2.vgregion.se,\
+                              FTV_DOMAIN:site3.vgregion.se" etc.')
     # Return dictionary of args
     return vars(parser.parse_args())
 
@@ -62,6 +72,10 @@ def batch_run_tests(files=None):
 
     robot_files_dir = arguments['destdir']
     output_log_dir = arguments['outputdir']
+    variables = arguments['variables']
+
+    if isinstance(variables, str):
+        variables = variables.split(",")
 
     os.chdir(robot_files_dir)
 
@@ -89,7 +103,8 @@ def batch_run_tests(files=None):
                   output=output_file_name,
                   log='log_' + file_name,
                   report='report_' + file_name,
-                  stdout=log_file)
+                  stdout=log_file,
+                  variable=variables)
 
         # Create output with XUnit format
         rebot(output_log_dir
