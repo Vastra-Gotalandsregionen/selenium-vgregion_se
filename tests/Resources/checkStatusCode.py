@@ -11,13 +11,17 @@ def check_status_code(url="https://api.github.com/user"):
     500 series codes
     """
 
-    response = requests.get(url)
-    status_code = str(response.status_code)
+    try:
+        response = requests.get(url, timeout=5)
+    except Timeout:
+        logging.error("Connection timed out")
+        return False
 
-    if status_code.startswith("4") or status_code.startswith("5"):
+    if not response:
+        status_code = str(response.status_code)
         logging.error('%s responds: %s %s', url, status_code, response.reason)
 
-    return status_code.startswith("2")
+    return response
 
 
 """

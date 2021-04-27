@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation
-Resource  Resources/keywords_hitta_dokument.robot
+Resource  Resources/keywords_hitta_verksamhet.robot
 Resource  Resources/keywords_general.robot
 Library  SeleniumLibrary
 Test Setup  Open Page
@@ -8,9 +8,8 @@ Test Teardown  End Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${HITTA_DOKUMENT_DOMAIN} =  hittadokument.vgregion.se
-${URL} =  https://${HITTA_DOKUMENT_DOMAIN}/
-
+${NARHALSAN_DOMAIN} =  www.narhalsan.se
+${URL} =  https://${NARHALSAN_DOMAIN}/hitta-mottagning/
 
 *** Test Cases ***
 
