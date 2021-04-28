@@ -74,6 +74,9 @@ def batch_run_tests(files=None):
     output_log_dir = arguments['outputdir']
     variables = arguments['variables']
 
+    if not output_log_dir.endswith('\\'):
+        output_log_dir += '\\'
+
     if isinstance(variables, str):
         variables = variables.split(",")
 
@@ -90,7 +93,7 @@ def batch_run_tests(files=None):
     if files is None:
         files = glob.glob("*.robot")
 
-    log_file = open('batch_log_output.txt', 'w')
+    log_file = open(output_log_dir +'batch_log_output.txt', 'w')
 
     for index, file in enumerate(files):
         print(file)
@@ -100,18 +103,18 @@ def batch_run_tests(files=None):
 
         # Run tests and create logs and reports with a uniqe name for each test
         robot.run(file,
-                  output=output_file_name,
-                  log='log_' + file_name,
-                  report='report_' + file_name,
+                  output=output_log_dir + output_file_name,
+                  log=output_log_dir + 'log_' + file_name,
+                  report=output_log_dir + 'report_' + file_name,
                   stdout=log_file,
                   variable=variables)
 
         # Create output with XUnit format
         rebot(output_log_dir
-              + '\\'
               + output_file_name
               + '.xml',
-              xunit='xunitoutput_'
+              xunit=output_log_dir 
+              + 'xunitoutput_'
               + file_name
               + '.xml')
 
