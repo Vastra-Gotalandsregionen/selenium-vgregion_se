@@ -15,9 +15,6 @@ ${URL} =  https://${VGR_DOMAIN}/
 
 *** Test Cases ***
 
-Test Lyssna
-    Test Listen Function
-
 Verify Sök Function
     Verify Sök Function Is Working
 

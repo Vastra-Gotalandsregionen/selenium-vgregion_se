@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${SU_DOMAIN} =  www.sahlgrenska.se
-${URL} =  https://${SU_DOMAIN}/for-dig-som-ar/vardgivare/laboratoriemedicin/analyslista/
+${URL} =  https://${SU_DOMAIN}/for-dig-som-ar/vardgivare/laboratoriemedicin/analyslistan/
 
 
 

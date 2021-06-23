@@ -19,24 +19,24 @@ Make A Search 2
 
     # [Documentation] Tests search bar on page
 
-    Input Text                  css:#search     Närsjukvårdsteam, södra Skaraborg
+    Input Text                  css:#search     Närsjukvårdsteam Skaraborg
     Click Element               css:#search-button
-    Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
-    Wait until Page Contains Element    xpath=//a[@href="https://www.vgregion.se/s/skaraborgs-sjukhus/avdelningar-och-mottagningar/narsjukvardsteam-sodra-skaraborg/"]
-    Click Link                  xpath=//a[@href="https://www.vgregion.se/s/skaraborgs-sjukhus/avdelningar-och-mottagningar/narsjukvardsteam-sodra-skaraborg/"]
-    Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
+    Wait Until Page Contains    Närsjukvårdsteam Skaraborg
+    Wait until Page Contains Element    xpath=//a[@href="https://www.vgregion.se/s/skaraborgs-sjukhus/avdelningar-och-mottagningar/narsjukvardsteam-skaraborg/"]
+    Click Link                  xpath=//a[@href="https://www.vgregion.se/s/skaraborgs-sjukhus/avdelningar-och-mottagningar/narsjukvardsteam-skaraborg/"]
+    Wait Until Page Contains    Närsjukvårdsteam Skaraborg
 
 
 Save Search
 
     # [Documentation] Tries to save a search and view it on page "Sparade Sökningar"
 
-    Input Text                  css:#search     Närsjukvårdsteam, södra Skaraborg
+    Input Text                  css:#search     Närsjukvårdsteam Skaraborg
     Click Element               css:#search-button
-    Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
+    Wait Until Page Contains    Närsjukvårdsteam Skaraborg
     Click Element               id:save-search
     Click Link                  xpath=//a[@href="/sparade-sokningar/"]
-    Wait Until Page Contains    Närsjukvårdsteam, södra Skaraborg
+    Wait Until Page Contains    Närsjukvårdsteam Skaraborg
 
 Compare Filter Results
 
@@ -47,7 +47,7 @@ Compare Filter Results
     Sleep                                   1s
     ${searchresultnumber} =     Get Text     css:[class="results"]
     Log                         ${searchresultnumber}
-    ${searchresultnumber} =     Remove String        ${searchresultnumber}   Ungefär  resultat  på
+    ${searchresultnumber} =     Remove String        ${searchresultnumber}   Ungefär  resultat  på  inom
     ${searchresultnumber} =     Convert To Number  ${searchresultnumber}
     Log                         ${searchresultnumber}
     Sleep                       2s
@@ -60,7 +60,7 @@ Compare Filter Results
     Sleep                                   1s
     ${searchresultnumber2} =    Get Text     css:[class="results"]
     Log                         ${searchresultnumber2}
-    ${searchresultnumber2} =    Remove String        ${searchresultnumber2}   Ungefär  resultat  på
+    ${searchresultnumber2} =    Remove String        ${searchresultnumber2}   Ungefär  resultat  på  inom
     ${searchresultnumber2} =    Convert To Number  ${searchresultnumber2}
     Log                         ${searchresultnumber2}
     Should Be True              ${searchresultnumber2} < ${searchresultnumber}

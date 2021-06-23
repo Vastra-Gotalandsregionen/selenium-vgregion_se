@@ -25,7 +25,7 @@ Use Hitta Klinik With Filters
     Sleep                               1s
     Click Element                       css:#SelectedMunicipality
     Sleep                               1s
-    Press Keys                          css:#SelectedMunicipality  g  ö  t  e  b
+    Click Element                       xpath=//select/option[@value="1480"]
     Sleep                               1s
     Press Keys                          css:#SelectedMunicipality  ENTER
     Click Element                       css:#offer-check-4

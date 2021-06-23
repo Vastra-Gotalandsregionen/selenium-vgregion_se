@@ -17,19 +17,6 @@ Open Page
     Open Browser                about:blank     ${BROWSER}
     Go To                       ${URL}
 
-
-Test Listen Function
-
-    # [Documentation]     Tests "Lyssna Nu" on header of page
-    Set Window Size                1400  1000
-    Sleep                                   1s
-    Click Element               id:speaklink
-    Sleep                       2s
-    Click Button                id:agreecookie
-    Wait Until Page Contains Element  id:insipio_player
-    Click Button                id:play50x50
-    Wait Until Page Contains Element  id:pause50x50
-
 Verify If Header Menu Is Visible
 
     # [Documentation]     Verifies that header appears on page
