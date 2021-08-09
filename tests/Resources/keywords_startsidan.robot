@@ -8,6 +8,7 @@ Verify Dropdown Under Aktuellt
 
     # [Documentation] Verifies if dropdown under "Aktuellt" is visible while mouse hovering over it
 
+    Set Window Size                      1400  1000
     Sleep                                3s
     Mouse Over                           css:#main-menu-nav [href="/aktuellt/"]
     Wait Until Element Is Visible        css:#main-menu-nav [href="/aktuellt/press/"]

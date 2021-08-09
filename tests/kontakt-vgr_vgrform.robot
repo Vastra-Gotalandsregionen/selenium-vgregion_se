@@ -15,9 +15,6 @@ ${URL} =  https://${VGR_DOMAIN}/kontakt-vgr/?vgrform=1/
 
 *** Test Cases ***
 
-Test Lyssna
-    Test Listen Function
-
 Verify Sök Function
     Verify Sök Function Is Working
 

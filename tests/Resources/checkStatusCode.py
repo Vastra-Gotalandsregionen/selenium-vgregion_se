@@ -13,7 +13,7 @@ def check_status_code(url="https://api.github.com/user"):
 
     try:
         response = requests.get(url, timeout=5)
-    except Timeout:
+    except:
         logging.error("Connection timed out")
         return False
 
