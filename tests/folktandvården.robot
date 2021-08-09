@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${FTV_DOMAIN} =  folktandvarden.vgregion.se
-${URL} =  https://${FTV_DOMAIN}/
+${URL} =  https://${FTV_DOMAIN}/vara-kliniker/
 
 
 *** Test Cases ***
