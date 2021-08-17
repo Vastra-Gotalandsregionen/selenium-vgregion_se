@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${VGR_DOMAIN} =  www.vgregion.se
-${URL} =  https://${VGR_DOMAIN}/om-vgr/organisation-och-verksamhet/alla-verksamheter/koncernkontoret/kontakt-regionledningen/
+${URL} =  https://${VGR_DOMAIN}/om-vgr/organisation-och-verksamhet/alla-verksamheter/koncernkontoret/kontakt-regionledningen/?vgrform=1
 
 
 

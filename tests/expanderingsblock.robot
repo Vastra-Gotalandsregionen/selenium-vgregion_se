@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${VGR_DOMAIN} =  www.vgregion.se
-${URL} =  https://${VGR_DOMAIN}/webbhandboken/block/expanderingsblock/
+${URL} =  https://${VGR_DOMAIN}/webbhandboken/block/expanderingsblock/?vgrform=1
 
 
 *** Test Cases ***

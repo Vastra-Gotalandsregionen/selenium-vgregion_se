@@ -11,7 +11,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${NARHALSAN_DOMAIN} =  www.narhalsan.se
-${URL} =  https://${NARHALSAN_DOMAIN}/hitta-mottagning/goteborg/goteborg-ostra/narhalsan-angered-vardcentral/
+${URL} =  https://${NARHALSAN_DOMAIN}/hitta-mottagning/goteborg/goteborg-ostra/narhalsan-angered-vardcentral/?vgrform=1
 
 
 *** Test Cases ***

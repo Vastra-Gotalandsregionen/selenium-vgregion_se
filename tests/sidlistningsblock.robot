@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${VGR_DOMAIN} =  www.vgregion.se
-${URL} =  https://${VGR_DOMAIN}/webbhandboken/block/sidlistningsblock/
+${URL} =  https://${VGR_DOMAIN}/webbhandboken/block/sidlistningsblock/?vgrform=1
 
 
 

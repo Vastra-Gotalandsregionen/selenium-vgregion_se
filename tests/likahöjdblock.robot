@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${VGR_DOMAIN} =  www.vgregion.se
-${URL} =  https://${VGR_DOMAIN}/webbhandboken/block/lika-hojdblock/
+${URL} =  https://${VGR_DOMAIN}/webbhandboken/block/lika-hojdblock/?vgrform=1
 
 
 
