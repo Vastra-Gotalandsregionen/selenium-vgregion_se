@@ -9,7 +9,7 @@ Test Setup  Open Page
 *** Variables ***
 ${BROWSER} =  chrome
 ${NARHALSAN_DOMAIN} =  www.narhalsan.se
-${URL} =  https://${NARHALSAN_DOMAIN}/hitta-mottagning/
+${URL} =  https://${NARHALSAN_DOMAIN}/hitta-mottagning/?vgrform=1
 
 
 *** Test Cases ***

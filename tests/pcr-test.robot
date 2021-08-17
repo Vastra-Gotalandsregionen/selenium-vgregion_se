@@ -10,7 +10,7 @@ Test Teardown  End Test
 
 ${BROWSER} =    chrome
 ${VGR_DOMAIN} =  www.vgregion.se
-${URL} =  https://${VGR_DOMAIN}/pcr-test-vgr/
+${URL} =  https://${VGR_DOMAIN}/pcr-test-vgr/?vgrform=1
 
 *** Test Cases ***
 

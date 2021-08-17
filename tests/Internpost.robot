@@ -9,7 +9,7 @@ Test Teardown  End Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${VGR_DOMAIN} =  www.vgregion.se
-${URL} =  https://${VGR_DOMAIN}/internpost
+${URL} =  https://${VGR_DOMAIN}/internpost/?vgrform=1
 
 
 *** Test Cases ***
