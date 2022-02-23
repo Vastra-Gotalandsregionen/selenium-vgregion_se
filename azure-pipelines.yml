@@ -16,7 +16,6 @@ steps:
     connection: 'Vastra-Gotalandsregionen'
     userRepository: 'selenium-vgregion_se'
     defaultVersionType: 'latest'
-    version: 'b3b7bc7fb543ab58a1e358c55d0db90eb00653c9'
     downloadPath: '$(System.ArtifactsDirectory)'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
